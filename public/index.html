@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/sections.css">
     <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/contact-form.css">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://histone.com.pk/">
@@ -739,15 +740,135 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- Contact Section -->
         <section class="cta-section reveal" id="contact">
             <div class="container">
-                <div class="cta-box">
-                    <h2 class="cta-title">Ready to Build Something Amazing?</h2>
-                    <p class="cta-description">
-                        Let's transform your vision into reality with proven expertise and innovative solutions
-                    </p>
-                    <a href="mailto:info@histone.com.pk" class="cta-btn">Start a Conversation</a>
+                <div class="section-header">
+                    <h2 class="section-title">Ready to Build Something Amazing?</h2>
+                    <p class="section-subtitle">Let's transform your vision into reality with proven expertise and innovative solutions</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" method="POST" action="api/contact.php">
+                        <!-- Honeypot for spam protection -->
+                        <input type="text" name="website" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label required">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label required">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company Name</label>
+                                <input type="text" id="company" name="company" class="form-input" placeholder="Your Company Inc.">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="project_type" class="form-label">Project Type</label>
+                                <select id="project_type" name="project_type" class="form-select">
+                                    <option value="other">Select Project Type</option>
+                                    <option value="amazon_integration">Amazon SP-API Integration</option>
+                                    <option value="saas_development">SaaS Development</option>
+                                    <option value="api_development">API Development</option>
+                                    <option value="ai_integration">AI/ML Integration</option>
+                                    <option value="consultation">Technical Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget_range" class="form-label">Budget Range</label>
+                                <select id="budget_range" name="budget_range" class="form-select">
+                                    <option value="not_sure">Select Budget Range</option>
+                                    <option value="under_5k">Under $5,000</option>
+                                    <option value="5k_10k">$5,000 - $10,000</option>
+                                    <option value="10k_25k">$10,000 - $25,000</option>
+                                    <option value="25k_50k">$25,000 - $50,000</option>
+                                    <option value="50k_plus">$50,000+</option>
+                                    <option value="not_sure">Not Sure Yet</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row full">
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Timeline</label>
+                                <select id="timeline" name="timeline" class="form-select">
+                                    <option value="flexible">Select Timeline</option>
+                                    <option value="urgent">Urgent (ASAP)</option>
+                                    <option value="within_month">Within a Month</option>
+                                    <option value="within_3months">Within 3 Months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row full">
+                            <div class="form-group">
+                                <label for="message" class="form-label required">Tell Us About Your Project</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Describe your project requirements, goals, and any specific challenges you're facing..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-checkbox-group">
+                            <input type="checkbox" id="subscribe" name="subscribe" class="form-checkbox">
+                            <label for="subscribe" class="checkbox-label">
+                                Yes, I'd like to receive updates about new articles and development insights
+                            </label>
+                        </div>
+
+                        <button type="submit" class="form-submit">Send Message</button>
+
+                        <div class="form-footer">
+                            We typically respond within 24 hours. By submitting this form, you agree to our
+                            <a href="#privacy">privacy policy</a>.
+                        </div>
+                    </form>
+
+                    <!-- Alternative Contact Methods -->
+                    <div class="contact-alternatives">
+                        <div class="alternatives-title">Or reach us directly</div>
+                        <div class="alternatives-grid">
+                            <div class="alternative-item">
+                                <div class="alternative-icon">📧</div>
+                                <div class="alternative-label">Email</div>
+                                <div class="alternative-value">
+                                    <a href="mailto:info@histone.com.pk">info@histone.com.pk</a>
+                                </div>
+                            </div>
+
+                            <div class="alternative-item">
+                                <div class="alternative-icon">📞</div>
+                                <div class="alternative-label">Phone</div>
+                                <div class="alternative-value">
+                                    <a href="tel:+925183594 91">+92 51 8359491</a>
+                                </div>
+                            </div>
+
+                            <div class="alternative-item">
+                                <div class="alternative-icon">💼</div>
+                                <div class="alternative-label">LinkedIn</div>
+                                <div class="alternative-value">
+                                    <a href="https://www.linkedin.com/in/muhammadawaisnaseem/" target="_blank" rel="noopener">Connect with us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -873,6 +994,7 @@
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/testimonials.js"></script>
+    <script src="assets/js/contact-form.js"></script>
 
     <!-- Update logo based on theme -->
     <script>
