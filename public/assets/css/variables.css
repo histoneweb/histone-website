@@ -1,0 +1,77 @@
+/* CSS Variables & Design System */
+
+:root {
+    /* Brand Colors */
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #22d3ee;
+    --dark: #0f172a;
+    --darker: #020617;
+    --light: #f8fafc;
+    --text: #64748b;
+    --success: #10b981;
+
+    /* Spacing System */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 10px;
+    --radius-md: 15px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-full: 50px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 30px rgba(99, 102, 241, 0.2);
+    --shadow-lg: 0 20px 40px rgba(99, 102, 241, 0.3);
+
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    --font-size-xs: 0.85rem;
+    --font-size-sm: 0.95rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 3rem;
+    --font-size-4xl: 4rem;
+}
+
+/* Dark Theme (Default) */
+body[data-theme="dark"] {
+    --bg-primary: #020617;
+    --bg-secondary: #0f172a;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --bg-card-hover: rgba(255, 255, 255, 0.05);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #f8fafc;
+    --text-secondary: #64748b;
+    --nav-bg: rgba(15, 23, 42, 0.8);
+    --nav-bg-solid: rgba(15, 23, 42, 0.95);
+    --gradient-opacity: 0.1;
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-card: rgba(99, 102, 241, 0.03);
+    --bg-card-hover: rgba(99, 102, 241, 0.06);
+    --border-color: rgba(99, 102, 241, 0.15);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --nav-bg-solid: rgba(255, 255, 255, 0.95);
+    --gradient-opacity: 0.05;
+}

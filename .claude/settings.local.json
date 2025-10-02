@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:histone.com.pk)",
+      "Bash(curl:*)",
+      "Bash(curl -o public/assets/images/logos/logo-black.png https://histone.com.pk/images/logos/logo-black.png)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
