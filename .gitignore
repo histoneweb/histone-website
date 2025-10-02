@@ -1,0 +1,77 @@
+# Environment Configuration
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Dependencies
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Logs
+/storage/logs/*.log
+*.log
+error_log
+
+# Cache Files
+/storage/cache/*
+!/storage/cache/.gitkeep
+/cache/
+
+# Uploads and User Generated Content
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Database Backups
+/backups/
+*.sql
+*.sqlite
+
+# Compiled Assets
+/public/assets/dist/
+*.min.css
+*.min.js
+
+# Temporary Files
+*.tmp
+*.temp
+/tmp/
+
+# System Files
+.htpasswd
+
+# Laravel/PHP Framework Specific (if we migrate later)
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+
+# Composer
+composer.phar
+
+# NPM Debug Logs
+npm-debug.log
+yarn-error.log
+
+# Test Coverage
+/coverage/
+.phpunit.result.cache
+
+# Build Files
+/dist/
+/build/
