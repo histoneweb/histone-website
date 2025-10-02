@@ -3,7 +3,10 @@
     "allow": [
       "WebFetch(domain:histone.com.pk)",
       "Bash(curl:*)",
-      "Bash(curl -o public/assets/images/logos/logo-black.png https://histone.com.pk/images/logos/logo-black.png)"
+      "Bash(curl -o public/assets/images/logos/logo-black.png https://histone.com.pk/images/logos/logo-black.png)",
+      "Bash(git push:*)",
+      "Bash(php:*)",
+      "Bash(unzip:*)"
     ],
     "deny": [],
     "ask": []

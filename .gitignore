@@ -75,3 +75,12 @@ yarn-error.log
 # Build Files
 /dist/
 /build/
+
+# WordPress
+/public/blog/wp-content/uploads/
+/public/blog/wp-content/cache/
+/public/blog/wp-content/upgrade/
+/public/blog/wp-content/backups/
+/public/blog/.htaccess
+/public/blog/wp-config.php
+*.log
