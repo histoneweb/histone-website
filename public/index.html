@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/sections.css">
     <link rel="stylesheet" href="assets/css/testimonials.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/contact-form.css">
 
     <!-- Canonical URL -->
@@ -48,6 +49,195 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://histone.com.pk/#person",
+                "name": "Muhammad Awais Naseem",
+                "url": "https://histone.com.pk",
+                "image": "https://histone.com.pk/assets/images/profile.jpg",
+                "sameAs": [
+                    "https://www.linkedin.com/in/awaisnaseem/",
+                    "https://github.com/histoneweb"
+                ],
+                "jobTitle": "Full Stack Developer & Technical Architect",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Histone Solutions Private Limited"
+                },
+                "alumniOf": {
+                    "@type": "Organization",
+                    "name": "Self-Taught Developer"
+                },
+                "knowsAbout": [
+                    "Amazon SP-API Development",
+                    "AI Integration",
+                    "OpenAI GPT-4",
+                    "Claude API",
+                    "Laravel PHP Framework",
+                    "Python Flask",
+                    "Vue.js",
+                    "React.js",
+                    "AWS Cloud Architecture",
+                    "SaaS Development",
+                    "Database Optimization",
+                    "RESTful API Design"
+                ],
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Rawalpindi",
+                    "addressRegion": "Punjab",
+                    "addressCountry": "Pakistan"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://histone.com.pk/#organization",
+                "name": "Histone Solutions Private Limited",
+                "alternateName": "Histone Solutions",
+                "url": "https://histone.com.pk",
+                "logo": "https://histone.com.pk/assets/images/logos/logo-black.png",
+                "description": "Full-stack development agency specializing in Amazon SP-API integration, AI/ML solutions, and SaaS product development with 14+ years of expertise.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Rawalpindi",
+                    "addressRegion": "Punjab",
+                    "addressCountry": "Pakistan"
+                },
+                "founder": {
+                    "@id": "https://histone.com.pk/#person"
+                },
+                "foundingDate": "2011",
+                "numberOfEmployees": "1-10",
+                "areaServed": ["US", "UK", "EU", "Australia", "Pakistan"],
+                "serviceArea": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "33.6007",
+                        "longitude": "73.0679"
+                    }
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Amazon SP-API Integration",
+                "provider": {
+                    "@id": "https://histone.com.pk/#organization"
+                },
+                "description": "Complete Amazon Seller Partner API integration, MWS to SP-API migration, seller tools development, and marketplace integration solutions.",
+                "areaServed": ["US", "UK", "EU", "Australia", "Global"],
+                "offers": {
+                    "@type": "Offer",
+                    "priceRange": "$$$",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "AI & Machine Learning Integration",
+                "provider": {
+                    "@id": "https://histone.com.pk/#organization"
+                },
+                "description": "OpenAI GPT-4, Claude API, LangChain, RAG systems, AI chatbot development, and semantic search implementation.",
+                "areaServed": ["Global"],
+                "offers": {
+                    "@type": "Offer",
+                    "priceRange": "$$$",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                }
+            },
+            {
+                "@type": "Service",
+                "serviceType": "Full Stack SaaS Development",
+                "provider": {
+                    "@id": "https://histone.com.pk/#organization"
+                },
+                "description": "End-to-end SaaS product development using Laravel, Vue.js, React.js, AWS infrastructure, and scalable multi-tenant architectures.",
+                "areaServed": ["Global"],
+                "offers": {
+                    "@type": "Offer",
+                    "priceRange": "$$$",
+                    "priceCurrency": "USD",
+                    "availability": "https://schema.org/InStock"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://histone.com.pk/#webpage",
+                "url": "https://histone.com.pk",
+                "name": "Histone Solutions - Full Stack Development & Amazon SP-API Expert",
+                "description": "14+ years of full-stack development expertise. Co-founder of SellerLegend, creator of Forecastly (acquired by Jungle Scout). Specialized in Amazon SP-API, AI/ML integration, and SaaS development.",
+                "inLanguage": "en-US",
+                "isPartOf": {
+                    "@id": "https://histone.com.pk/#website"
+                },
+                "about": {
+                    "@id": "https://histone.com.pk/#organization"
+                },
+                "primaryImageOfPage": {
+                    "@type": "ImageObject",
+                    "url": "https://histone.com.pk/assets/images/og-image.jpg"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://histone.com.pk/#website",
+                "url": "https://histone.com.pk",
+                "name": "Histone Solutions",
+                "description": "Full Stack Development & Amazon SP-API Expert",
+                "publisher": {
+                    "@id": "https://histone.com.pk/#organization"
+                },
+                "inLanguage": "en-US"
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What services do you specialize in?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "I specialize in three main areas: Amazon Ecosystem Development (SP-API integration, MWS migration, seller tools), AI & Machine Learning Integration (OpenAI GPT-4, Claude API, LangChain, RAG systems), and Full Stack SaaS Development (PHP Laravel, Python, Vue.js, AWS infrastructure)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How much does an Amazon SP-API integration project cost?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Amazon SP-API projects vary based on complexity: Basic Integration (1-2 weeks) costs $2,000-$4,000, Standard Integration (2-4 weeks) costs $4,000-$8,000, and Advanced Solutions (4-8 weeks) cost $8,000-$15,000+. Hourly rate ranges from $20-30/hour."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can you help migrate from Amazon MWS to SP-API?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes! I've successfully migrated 10+ applications from MWS to SP-API. The migration process typically takes 4-6 weeks and includes audit, planning, implementation, and testing phases with zero downtime."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What makes your AI integration services different?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "I focus on practical, ROI-driven AI implementations with production experience processing 500K+ queries/month. I've implemented cost optimizations reducing expenses by 70% and deployed chatbots reducing support tickets by 73%."
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body data-theme="dark">
 
@@ -73,7 +263,7 @@
     <header class="header">
         <div class="nav-container">
             <a href="./" class="logo">
-                <img src="assets/images/logos/logo-white.png" alt="Histone Solutions Logo" id="logo-img">
+                <img src="assets/images/logos/logo-white.png" alt="Histone Solutions Logo" id="logo-img" loading="lazy">
                 <span class="logo-text">HISTONE</span>
             </a>
 
@@ -153,6 +343,11 @@
                         <p class="feature-description">
                             End-to-end application development using PHP, Python, Node.js, and modern frameworks. From architecture design to deployment, ensuring scalable and maintainable solutions.
                         </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 2-8 weeks</span>
+                            <span class="service-rate">💰 $15-30/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🛍️</div>
@@ -160,6 +355,24 @@
                         <p class="feature-description">
                             8+ years specializing in SP-API, MWS migration, seller tools, and marketplace integration. Built tools managing millions in transactions and inventory.
                         </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 1-4 weeks</span>
+                            <span class="service-rate">💰 $20-30/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
+                    </div>
+                    <div class="feature-card featured">
+                        <div class="feature-badge">Most Popular</div>
+                        <div class="feature-icon">🤖</div>
+                        <h3 class="feature-title">AI Integration Services</h3>
+                        <p class="feature-description">
+                            GPT-4, Claude API, LangChain, RAG systems, chatbot development. Transform your business with cutting-edge AI solutions that reduce costs by 70%+.
+                        </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 2-6 weeks</span>
+                            <span class="service-rate">💰 $25-35/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">☁️</div>
@@ -167,6 +380,11 @@
                         <p class="feature-description">
                             Co-founded SellerLegend, developed Forecastly (acquired). Expert in multi-tenant architecture, subscription models, and scaling from MVP to enterprise.
                         </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 4-12 weeks</span>
+                            <span class="service-rate">💰 $20-30/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">⚡</div>
@@ -174,20 +392,334 @@
                         <p class="feature-description">
                             RESTful API design, OAuth 2.0 implementation, webhook systems, and third-party integrations. Processed 10M+ monthly API calls with optimal performance.
                         </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔧</div>
-                        <h3 class="feature-title">Performance Optimization</h3>
-                        <p class="feature-description">
-                            Database optimization, caching strategies, and infrastructure scaling. Achieved 60% query time reduction and 40% system response improvements.
-                        </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 1-3 weeks</span>
+                            <span class="service-rate">💰 $18-28/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card">
                         <div class="feature-icon">🏗️</div>
-                        <h3 class="feature-title">Cloud Architecture</h3>
+                        <h3 class="feature-title">Cloud Architecture & DevOps</h3>
                         <p class="feature-description">
                             AWS expertise with EC2, RDS Aurora, S3, ElastiCache, VPC, and CloudWatch. Infrastructure as Code, CI/CD pipelines, and DevOps best practices.
                         </p>
+                        <div class="service-meta">
+                            <span class="service-timeline">⏱️ 1-4 weeks</span>
+                            <span class="service-rate">💰 $22-32/hr</span>
+                        </div>
+                        <a href="#contact" class="service-cta">Get Started →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions We Build Section -->
+        <section class="solutions-section reveal" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Enterprise Solutions We Build</h2>
+                    <p class="section-subtitle">Production-ready systems built for scalability, performance, and modern business needs</p>
+                </div>
+
+                <div class="solutions-grid">
+                    <!-- Amazon Seller Tools -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">🛍️</span>
+                            <h3>Amazon Seller & E-commerce Tools</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>📊 Real-Time Analytics Dashboards</strong>
+                                <p>Multi-marketplace profit tracking, sales analytics, and ROI calculations processing 50,000+ daily transactions with sub-second response times.</p>
+                                <span class="tech-stack">Laravel • Vue.js • MySQL • Redis</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>📦 Inventory Management Systems</strong>
+                                <p>Automated FBA sync, multi-channel inventory tracking, restock alerts, and stranded inventory detection across US, EU, and Asia marketplaces.</p>
+                                <span class="tech-stack">SP-API • WebSockets • Queues</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>💰 Repricing & PPC Optimization</strong>
+                                <p>Intelligent repricing algorithms, sponsored products management, keyword optimization, and automated bid adjustments processing 500K+ ad impressions daily.</p>
+                                <span class="tech-stack">Python • Redis • Celery</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🔄 Order & Data Sync Engines</strong>
+                                <p>High-performance background processing with Laravel Horizon, handling 10M+ monthly API calls with rate limiting and automatic error recovery.</p>
+                                <span class="tech-stack">Laravel Horizon • Redis Queues</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Automation Solutions -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">🤖</span>
+                            <h3>AI & Intelligent Automation</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>💬 AI Customer Support Chatbots</strong>
+                                <p>GPT-4 and Claude-powered support systems reducing ticket volume by 73%, handling 500K+ queries/month with 99.9% uptime and 4.8/5 satisfaction.</p>
+                                <span class="tech-stack">OpenAI • Claude • LangChain • Pinecone</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🔍 RAG & Knowledge Base Systems</strong>
+                                <p>Retrieval-Augmented Generation for intelligent document search, semantic answers, and context-aware responses using vector databases.</p>
+                                <span class="tech-stack">LangChain • Pinecone • Embeddings</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>⚡ AI Cost Optimization Layer</strong>
+                                <p>Semantic caching and intelligent model routing reducing OpenAI costs by 70% while maintaining response quality and performance.</p>
+                                <span class="tech-stack">Redis • Model Selection • Caching</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>📧 Intelligent Email & Notification Systems</strong>
+                                <p>Smart alert engines for critical events with ML-powered anomaly detection, sending 100K+ emails monthly with 99.5% delivery rate.</p>
+                                <span class="tech-stack">Laravel Queues • SES • AI Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SaaS Infrastructure -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">☁️</span>
+                            <h3>SaaS Platform Infrastructure</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>💳 Subscription & Billing Systems</strong>
+                                <p>Multi-tier subscription management with Stripe, automatic invoicing, usage tracking, prorated billing, and payment failure handling.</p>
+                                <span class="tech-stack">Stripe • Laravel Cashier • Webhooks</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🔐 Authentication & Security</strong>
+                                <p>OAuth 2.0, two-factor authentication, role-based access control, API key management, audit logging, and SOC 2 compliance.</p>
+                                <span class="tech-stack">OAuth 2.0 • JWT • 2FA</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🗄️ Database Architecture & Scaling</strong>
+                                <p>Optimized schemas handling 50M+ records with proper indexing, partitioning, Redis caching reducing queries by 60%, sub-200ms response times.</p>
+                                <span class="tech-stack">MySQL • PostgreSQL • Redis • ElastiCache</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>☁️ AWS Cloud Architecture</strong>
+                                <p>Scalable infrastructure with EC2 auto-scaling, RDS Aurora, S3, CloudWatch monitoring, handling traffic spikes during peak seasons.</p>
+                                <span class="tech-stack">AWS • Docker • Kubernetes • CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modern Web Applications -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">💻</span>
+                            <h3>Modern Web Applications</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>📱 Progressive Web Apps (PWA)</strong>
+                                <p>Mobile-responsive SPAs with Vue.js/React, real-time updates via WebSockets, lazy loading, code splitting for fast initial load times.</p>
+                                <span class="tech-stack">Vue.js 3 • React • Next.js • PWA</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>📊 Interactive Data Visualization</strong>
+                                <p>Custom charting and analytics dashboards with D3.js, supporting 12+ months historical data, real-time updates, and export capabilities.</p>
+                                <span class="tech-stack">D3.js • Chart.js • Real-time Data</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🔌 RESTful & GraphQL APIs</strong>
+                                <p>Well-documented APIs with rate limiting, versioning, authentication, and comprehensive error handling processing millions of requests monthly.</p>
+                                <span class="tech-stack">Laravel • Node.js • GraphQL • REST</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>⚡ Real-Time Collaboration Tools</strong>
+                                <p>WebSocket-powered real-time features: live updates, notifications, collaborative editing, and instant synchronization across devices.</p>
+                                <span class="tech-stack">WebSockets • Socket.io • Redis Pub/Sub</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data & Analytics -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">📈</span>
+                            <h3>Data Processing & Analytics</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>🔄 ETL Pipelines & Data Integration</strong>
+                                <p>Automated data extraction, transformation, and loading from multiple sources with error recovery, validation, and data quality monitoring.</p>
+                                <span class="tech-stack">Python • Pandas • Apache Airflow</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>📊 Business Intelligence Dashboards</strong>
+                                <p>Executive dashboards with KPIs, trends analysis, predictive analytics, and automated reporting for data-driven decision making.</p>
+                                <span class="tech-stack">PowerBI • Tableau • Custom Dashboards</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🕷️ Web Scraping & Data Collection</strong>
+                                <p>Ethical web scraping solutions with Beautiful Soup, Scrapy, handling dynamic content, CAPTCHAs, and rate limiting for competitive intelligence.</p>
+                                <span class="tech-stack">Python • Beautiful Soup • Scrapy • Selenium</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>⚡ Performance Optimization</strong>
+                                <p>Database query optimization, caching strategies, CDN integration, reducing load times by 60% and improving response times to sub-200ms.</p>
+                                <span class="tech-stack">Redis • CDN • Query Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain & Web3 -->
+                    <div class="solution-category">
+                        <div class="solution-header">
+                            <span class="solution-icon">🔗</span>
+                            <h3>Blockchain & Modern Technologies</h3>
+                        </div>
+                        <div class="solution-modules">
+                            <div class="solution-item">
+                                <strong>💎 Smart Contract Integration</strong>
+                                <p>Ethereum and blockchain integration, wallet connectivity, transaction management, and decentralized application backends.</p>
+                                <span class="tech-stack">Web3.js • Solidity • Ethereum</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🔐 Cryptocurrency Payment Systems</strong>
+                                <p>Crypto payment gateways, wallet integration, transaction tracking, and multi-currency support for modern e-commerce platforms.</p>
+                                <span class="tech-stack">Blockchain APIs • Crypto Wallets</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>📱 Mobile-First Applications</strong>
+                                <p>Responsive web apps optimized for mobile with touch gestures, offline-first architecture, and native-like performance.</p>
+                                <span class="tech-stack">PWA • Service Workers • IndexedDB</span>
+                            </div>
+                            <div class="solution-item">
+                                <strong>🎯 Microservices Architecture</strong>
+                                <p>Scalable microservices with Docker, Kubernetes, service mesh, event-driven communication, and independent deployment pipelines.</p>
+                                <span class="tech-stack">Docker • Kubernetes • Microservices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Stats -->
+                <div class="solutions-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-text">SaaS Platforms Built</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">10M+</span>
+                        <span class="stat-text">API Calls/Month</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-text">Records Processed</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-text">Uptime SLA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="expertise reveal" id="expertise">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Proven skills across 52+ delivered projects</p>
+                </div>
+
+                <!-- Specialized Expertise Areas -->
+                <div class="expertise-categories">
+                    <!-- Row 1 -->
+                    <div class="expertise-category">
+                        <h3 class="category-title">Amazon Ecosystem Mastery</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item premium"><span class="tech-icon">📦</span><span>MWS to SP-API Migration</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">🏪</span><span>Seller Central Integration</span><span class="experience-badge">7+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">📊</span><span>FBA Management</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">💰</span><span>Sponsored Products API</span><span class="experience-badge">4+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">🔄</span><span>Order & Inventory Sync</span><span class="experience-badge">7+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">💲</span><span>Repricing Algorithms</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">🌍</span><span>Multi-Marketplace Integration</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">📢</span><span>Amazon Advertising API</span><span class="experience-badge">4+ yrs</span></div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">AI & Machine Learning</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item premium"><span class="tech-icon">🤖</span><span>OpenAI GPT-4 Integration</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">🧠</span><span>Claude API (Anthropic)</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">⛓️</span><span>LangChain Framework</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item premium"><span class="tech-icon">🔍</span><span>RAG Implementation</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📌</span><span>Vector Databases (Pinecone)</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">✨</span><span>Prompt Engineering</span><span class="experience-badge">2+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">💬</span><span>AI Chatbot Development</span><span class="experience-badge">3+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔎</span><span>Embeddings & Semantic Search</span><span class="experience-badge">2+ yrs</span></div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Backend Development</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item"><span class="tech-icon">🐘</span><span>PHP (Laravel, CodeIgniter)</span><span class="experience-badge">14+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🐍</span><span>Python (Flask, Django)</span><span class="experience-badge">8+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🟢</span><span>Node.js & Express</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔌</span><span>RESTful API Design</span><span class="experience-badge">12+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📊</span><span>GraphQL APIs</span><span class="experience-badge">3+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🏗️</span><span>Microservices Architecture</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔐</span><span>OAuth 2.0 & JWT</span><span class="experience-badge">8+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">⚡</span><span>WebSocket & Real-time</span><span class="experience-badge">6+ yrs</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="expertise-category">
+                        <h3 class="category-title">Cloud & Infrastructure</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item"><span class="tech-icon">☁️</span><span>AWS (EC2, RDS, S3)</span><span class="experience-badge">10+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">⚡</span><span>ElastiCache & Redis</span><span class="experience-badge">7+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📈</span><span>CloudWatch & SQS</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔒</span><span>VPC & Security Groups</span><span class="experience-badge">8+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📊</span><span>Auto-scaling & Load Balancing</span><span class="experience-badge">7+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔄</span><span>CI/CD Pipelines</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🐳</span><span>Docker & Kubernetes</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">⚙️</span><span>Server Optimization</span><span class="experience-badge">12+ yrs</span></div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Frontend & UI/UX</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item"><span class="tech-icon">💚</span><span>Vue.js & Nuxt.js</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">⚛️</span><span>React.js & Next.js</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🎨</span><span>Tailwind CSS</span><span class="experience-badge">4+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🅱️</span><span>Bootstrap 5</span><span class="experience-badge">10+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🟨</span><span>JavaScript ES6+</span><span class="experience-badge">12+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔷</span><span>TypeScript</span><span class="experience-badge">4+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📱</span><span>Responsive Design</span><span class="experience-badge">12+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📲</span><span>Progressive Web Apps</span><span class="experience-badge">5+ yrs</span></div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Data & Analytics</h3>
+                        <div class="expertise-detailed">
+                            <div class="expertise-item"><span class="tech-icon">🗄️</span><span>MySQL & PostgreSQL</span><span class="experience-badge">14+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🍃</span><span>MongoDB & NoSQL</span><span class="experience-badge">7+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📊</span><span>Big Data Processing</span><span class="experience-badge">5+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📈</span><span>Business Intelligence</span><span class="experience-badge">8+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🕷️</span><span>Web Scraping (Beautiful Soup)</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">📉</span><span>Data Visualization (D3.js)</span><span class="experience-badge">4+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">🔄</span><span>ETL Pipelines</span><span class="experience-badge">6+ yrs</span></div>
+                            <div class="expertise-item"><span class="tech-icon">⚡</span><span>Performance Optimization</span><span class="experience-badge">12+ yrs</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,16 +750,22 @@
                     </div>
 
                     <div class="showcase-item highlight">
-                        <div class="showcase-badge">🚀 Co-Founder</div>
-                        <h3>SellerLegend</h3>
+                        <div class="showcase-badge">🚀 Co-Founder & Lead Developer</div>
+                        <h3>SellerLegend - Complete Amazon Seller Analytics Platform</h3>
                         <p class="showcase-description">
-                            Comprehensive Amazon seller analytics platform serving 5,000+ active users. Features real-time profit tracking, inventory management, and performance analytics. Processing millions in monthly transactions.
+                            Co-founded and built SellerLegend from ground up - a comprehensive Amazon seller analytics SaaS platform serving 5,000+ active users and tracking $50M+ monthly GMV. As the lead technical architect, I designed and developed the entire platform including real-time profit dashboards, inventory management, PPC optimization, multi-marketplace SP-API integration, subscription billing with Stripe, and scalable AWS infrastructure. Processes 10M+ API calls monthly with 99.9% uptime.
                         </p>
                         <div class="tech-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">Vue.js</span>
+                            <span class="tag">Laravel 8-10</span>
+                            <span class="tag">Vue.js 3</span>
+                            <span class="tag">MySQL 8</span>
                             <span class="tag">Redis</span>
-                            <span class="tag">RDS Aurora</span>
+                            <span class="tag">AWS RDS Aurora</span>
+                            <span class="tag">ElastiCache</span>
+                            <span class="tag">Amazon SP-API</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Laravel Horizon</span>
+                            <span class="tag">D3.js</span>
                         </div>
                     </div>
 
@@ -361,105 +899,6 @@
                         <span class="stat-icon">💰</span>
                         <span class="stat-value">$11-30</span>
                         <span class="stat-label">Hourly Rate Range</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Expertise Section -->
-        <section class="expertise reveal" id="expertise">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Technical Expertise</h2>
-                    <p class="section-subtitle">Proven skills across 52+ delivered projects</p>
-                </div>
-
-                <!-- Specialized Expertise Areas -->
-                <div class="expertise-categories">
-                    <!-- Row 1 -->
-                    <div class="expertise-category">
-                        <h3 class="category-title">Amazon Ecosystem Mastery</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item premium">MWS to SP-API Migration</div>
-                            <div class="expertise-item premium">Seller Central Integration</div>
-                            <div class="expertise-item premium">FBA Management</div>
-                            <div class="expertise-item premium">Sponsored Products API</div>
-                            <div class="expertise-item premium">Order & Inventory Sync</div>
-                            <div class="expertise-item premium">Repricing Algorithms</div>
-                            <div class="expertise-item premium">Multi-Marketplace Integration</div>
-                            <div class="expertise-item premium">Amazon Advertising API</div>
-                        </div>
-                    </div>
-
-                    <div class="expertise-category">
-                        <h3 class="category-title">AI & Machine Learning</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item premium">OpenAI GPT-4 Integration</div>
-                            <div class="expertise-item premium">Claude API (Anthropic)</div>
-                            <div class="expertise-item premium">LangChain Framework</div>
-                            <div class="expertise-item premium">RAG Implementation</div>
-                            <div class="expertise-item">Vector Databases (Pinecone)</div>
-                            <div class="expertise-item">Prompt Engineering</div>
-                            <div class="expertise-item">AI Chatbot Development</div>
-                            <div class="expertise-item">Embeddings & Semantic Search</div>
-                        </div>
-                    </div>
-
-                    <div class="expertise-category">
-                        <h3 class="category-title">Backend Development</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item">PHP (Laravel, CodeIgniter)</div>
-                            <div class="expertise-item">Python (Flask, Django)</div>
-                            <div class="expertise-item">Node.js & Express</div>
-                            <div class="expertise-item">RESTful API Design</div>
-                            <div class="expertise-item">GraphQL APIs</div>
-                            <div class="expertise-item">Microservices Architecture</div>
-                            <div class="expertise-item">OAuth 2.0 & JWT</div>
-                            <div class="expertise-item">WebSocket & Real-time</div>
-                        </div>
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="expertise-category">
-                        <h3 class="category-title">Cloud & Infrastructure</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item">AWS (EC2, RDS, S3)</div>
-                            <div class="expertise-item">ElastiCache & Redis</div>
-                            <div class="expertise-item">CloudWatch & SQS</div>
-                            <div class="expertise-item">VPC & Security Groups</div>
-                            <div class="expertise-item">Auto-scaling & Load Balancing</div>
-                            <div class="expertise-item">CI/CD Pipelines</div>
-                            <div class="expertise-item">Docker & Kubernetes</div>
-                            <div class="expertise-item">Server Optimization</div>
-                        </div>
-                    </div>
-
-                    <div class="expertise-category">
-                        <h3 class="category-title">Frontend & UI/UX</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item">Vue.js & Nuxt.js</div>
-                            <div class="expertise-item">React.js & Next.js</div>
-                            <div class="expertise-item">Tailwind CSS</div>
-                            <div class="expertise-item">Bootstrap 5</div>
-                            <div class="expertise-item">JavaScript ES6+</div>
-                            <div class="expertise-item">TypeScript</div>
-                            <div class="expertise-item">Responsive Design</div>
-                            <div class="expertise-item">Progressive Web Apps</div>
-                        </div>
-                    </div>
-
-                    <div class="expertise-category">
-                        <h3 class="category-title">Data & Analytics</h3>
-                        <div class="expertise-detailed">
-                            <div class="expertise-item">MySQL & PostgreSQL</div>
-                            <div class="expertise-item">MongoDB & NoSQL</div>
-                            <div class="expertise-item">Big Data Processing</div>
-                            <div class="expertise-item">Business Intelligence</div>
-                            <div class="expertise-item">Web Scraping (Beautiful Soup)</div>
-                            <div class="expertise-item">Data Visualization (D3.js)</div>
-                            <div class="expertise-item">ETL Pipelines</div>
-                            <div class="expertise-item">Performance Optimization</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -741,6 +1180,218 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="faq-section reveal" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Get answers to common questions about my services and expertise</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What services do you specialize in?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I specialize in three main areas with over 14 years of hands-on experience:</p>
+                            <ul>
+                                <li><strong>Amazon Ecosystem Development:</strong> SP-API integration, MWS to SP-API migration, seller tools, FBA management systems, repricing algorithms, and multi-marketplace integration. I've built tools managing millions of dollars in Amazon transactions.</li>
+                                <li><strong>AI & Machine Learning Integration:</strong> OpenAI GPT-4, Claude API, LangChain framework, RAG (Retrieval-Augmented Generation) systems, AI chatbots, and semantic search. Recent projects include reducing customer support costs by 70% through intelligent AI automation.</li>
+                                <li><strong>Full Stack SaaS Development:</strong> PHP (Laravel, CodeIgniter), Python (Flask, Django), Vue.js, React.js, AWS infrastructure, and scalable multi-tenant architectures. Co-founded SellerLegend and built Forecastly from ground up.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How much does an Amazon SP-API integration project cost?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Amazon SP-API projects vary based on complexity and scope. Here's a typical breakdown:</p>
+                            <ul>
+                                <li><strong>Basic Integration (1-2 weeks):</strong> $2,000 - $4,000 - Simple order sync, inventory updates, basic reporting</li>
+                                <li><strong>Standard Integration (2-4 weeks):</strong> $4,000 - $8,000 - Multi-marketplace support, FBA integration, sponsored products API, repricing</li>
+                                <li><strong>Advanced Solution (4-8 weeks):</strong> $8,000 - $15,000+ - Complete seller tool with analytics, forecasting, automated workflows, custom algorithms</li>
+                            </ul>
+                            <p>My hourly rate ranges from $20-30/hour depending on project complexity. I provide detailed estimates after understanding your specific requirements and can work on both fixed-price and hourly basis.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can you help migrate from Amazon MWS to SP-API?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! I've successfully migrated 10+ applications from MWS to SP-API. The migration process typically involves:</p>
+                            <ol>
+                                <li><strong>Audit (Week 1):</strong> Review existing MWS implementation, identify all API calls, data dependencies, and business logic</li>
+                                <li><strong>Planning (Week 1-2):</strong> Map MWS endpoints to SP-API equivalents, plan OAuth 2.0 implementation, design new architecture</li>
+                                <li><strong>Implementation (Week 2-4):</strong> Build new SP-API integration, implement LWA (Login with Amazon), migrate data flows</li>
+                                <li><strong>Testing & Deployment (Week 4-5):</strong> Parallel testing, validation, staged rollout to minimize disruption</li>
+                            </ol>
+                            <p>I ensure zero downtime during migration and maintain backward compatibility where needed. Average timeline: 4-6 weeks depending on application complexity.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What makes your AI integration services different?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I focus on practical, ROI-driven AI implementations rather than experimental projects. Key differentiators:</p>
+                            <ul>
+                                <li><strong>Production Experience:</strong> Built AI systems processing 500K+ queries/month with 99.9% uptime</li>
+                                <li><strong>Cost Optimization:</strong> Implemented semantic caching and intelligent model routing that reduced costs by 70% for clients</li>
+                                <li><strong>Real Results:</strong> Deployed chatbots that reduced support tickets by 73% while maintaining 4.8/5 customer satisfaction</li>
+                                <li><strong>Multi-Model Expertise:</strong> Work with OpenAI GPT-4, Claude, and open-source models - choosing the right tool for your budget and requirements</li>
+                                <li><strong>End-to-End Implementation:</strong> From prompt engineering to production deployment, monitoring, and continuous improvement</li>
+                            </ul>
+                            <p>I provide realistic timelines, transparent pricing, and measurable KPIs for every AI project.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you work with startups or only established companies?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I work with both! My experience spans from early-stage startups to enterprise clients:</p>
+                            <ul>
+                                <li><strong>Startups & MVPs:</strong> Helped launch 15+ SaaS products from scratch. I understand lean development, quick iterations, and building for scalability from day one. Can work with equity + cash arrangements for promising projects.</li>
+                                <li><strong>Growing Businesses:</strong> Ideal for companies scaling from 100 to 10,000+ users. I've optimized systems handling millions of API calls and designed architectures that scale horizontally.</li>
+                                <li><strong>Enterprise Clients:</strong> Worked with established businesses like Honest Office, Planet3, and Maxton on mission-critical integrations and infrastructure.</li>
+                            </ul>
+                            <p>Minimum project size: $1,500. Preferred project duration: 2-12 weeks for focused delivery and maximum impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What's your development process and communication style?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I follow an agile, transparent development approach:</p>
+                            <ol>
+                                <li><strong>Discovery (Week 1):</strong> Detailed requirements gathering, technical specification, timeline and cost estimate</li>
+                                <li><strong>Architecture & Planning:</strong> Design system architecture, database schema, API contracts, and deployment strategy</li>
+                                <li><strong>Iterative Development:</strong> Weekly sprints with deployable increments, regular demos, and feedback incorporation</li>
+                                <li><strong>Quality Assurance:</strong> Code reviews, automated testing, performance optimization, and security audits</li>
+                                <li><strong>Deployment & Support:</strong> Staged rollout, monitoring setup, documentation, and 30-day post-launch support</li>
+                            </ol>
+                            <p><strong>Communication:</strong> Daily updates via Slack/email, weekly video calls, shared project board (Trello/Jira), and detailed documentation. Timezone flexible - I work across US, EU, and Asia-Pacific hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can you help with ongoing maintenance and support?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! I offer flexible maintenance and support options:</p>
+                            <ul>
+                                <li><strong>Retainer Packages:</strong> 10-40 hours/month for ongoing development, bug fixes, and feature additions. Ideal for active projects requiring continuous improvement.</li>
+                                <li><strong>On-Demand Support:</strong> Pay-as-you-go hourly rate for occasional updates, emergency fixes, or small enhancements.</li>
+                                <li><strong>Monitoring & DevOps:</strong> Server monitoring, performance optimization, security patches, and infrastructure management.</li>
+                            </ul>
+                            <p>All projects include 30 days of free post-launch support covering bug fixes and minor adjustments. I maintain long-term relationships with clients - many have been working with me for 3-5+ years.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What technologies and frameworks do you work with?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I have deep expertise across the full technology stack:</p>
+                            <ul>
+                                <li><strong>Backend:</strong> PHP (Laravel 8-11, CodeIgniter), Python (Flask, Django), Node.js (Express), RESTful APIs, GraphQL, WebSockets</li>
+                                <li><strong>Frontend:</strong> Vue.js 3, React.js, Nuxt.js, Next.js, Tailwind CSS, Bootstrap 5, vanilla JavaScript ES6+</li>
+                                <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis, ElastiCache, database optimization and scaling</li>
+                                <li><strong>Cloud & DevOps:</strong> AWS (EC2, RDS, S3, Lambda, CloudWatch, SQS), Docker, Kubernetes, CI/CD pipelines, Infrastructure as Code</li>
+                                <li><strong>AI/ML:</strong> OpenAI API, Claude API, LangChain, Pinecone, Hugging Face, prompt engineering, RAG systems</li>
+                                <li><strong>Amazon:</strong> SP-API, MWS, Seller Central, FBA, Advertising API, OAuth 2.0, LWA</li>
+                            </ul>
+                            <p>I choose technologies based on project requirements, team expertise, and long-term maintainability - not trends or personal preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Where are you located and what are your working hours?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I'm based in Rawalpindi, Pakistan (GMT+5 timezone) and work with clients globally:</p>
+                            <ul>
+                                <li><strong>Primary Hours:</strong> 9 AM - 6 PM PKT (Pakistan Time), Monday to Friday</li>
+                                <li><strong>Flexible Availability:</strong> Can adjust schedule for US (EST/PST) and European (CET) clients with 4-6 hours overlap</li>
+                                <li><strong>Communication:</strong> Available via Slack, email, and scheduled video calls. Respond to urgent messages within 2-4 hours during business days</li>
+                                <li><strong>Remote Work:</strong> 100% remote since 2011. Experienced in distributed team collaboration, async communication, and delivering quality work without office oversight</li>
+                            </ul>
+                            <p>I've successfully delivered 52+ projects for international clients across USA, UK, Australia, Germany, and UAE with zero timezone-related issues.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I get started with a project?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Getting started is simple and straightforward:</p>
+                            <ol>
+                                <li><strong>Initial Contact:</strong> Fill out the contact form below or email me at awaisnaseem1@gmail.com with your project details</li>
+                                <li><strong>Discovery Call (30-60 min):</strong> Free consultation to understand your requirements, goals, timeline, and budget</li>
+                                <li><strong>Proposal (2-3 days):</strong> Detailed technical proposal with architecture overview, timeline, milestones, and cost breakdown</li>
+                                <li><strong>Agreement:</strong> Sign contract/SOW, set up communication channels (Slack/Trello), and make initial payment (usually 30-50% upfront)</li>
+                                <li><strong>Kickoff:</strong> Start development within 1-3 days, begin first sprint, and establish regular check-in schedule</li>
+                            </ol>
+                            <p>Most projects start within one week of initial contact. Rush projects can begin within 24-48 hours if requirements are clear.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-banner reveal">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="cta-title">Let's Discuss Your Next Project</h2>
+                    <p class="cta-description">
+                        Whether you need Amazon SP-API integration, AI chatbot development, or full-stack SaaS solutions, I'm here to help you succeed.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="cta-button primary">Start a Project</a>
+                        <a href="https://www.linkedin.com/in/awaisnaseem/" target="_blank" rel="noopener" class="cta-button secondary">View LinkedIn Profile</a>
+                    </div>
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <span class="stat-number">52+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="cta-stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="cta-stat">
+                            <span class="stat-number">14+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section class="cta-section reveal" id="contact">
             <div class="container">
@@ -882,7 +1533,7 @@
                 <!-- Brand Section -->
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="assets/images/logos/footer-logo.png" alt="Histone Solutions">
+                        <img src="assets/images/logos/footer-logo.png" alt="Histone Solutions" loading="lazy">
                         <span class="footer-logo-text">HISTONE</span>
                     </div>
                     <p class="footer-description">
@@ -995,6 +1646,7 @@
     <script src="assets/js/navigation.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/testimonials.js"></script>
+    <script src="assets/js/faq.js"></script>
     <script src="assets/js/contact-form.js"></script>
 
     <!-- Update logo based on theme -->

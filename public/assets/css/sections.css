@@ -243,6 +243,62 @@
     line-height: 1.8;
     position: relative;
     z-index: 1;
+    margin-bottom: 1.5rem;
+}
+
+.service-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.service-timeline,
+.service-rate {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+.service-cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.service-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.feature-card.featured {
+    border: 2px solid var(--primary);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(34, 211, 238, 0.04));
+}
+
+.feature-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 2;
 }
 
 /* Portfolio Section */
@@ -276,6 +332,87 @@
 body[data-theme="light"] .showcase-item.highlight {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(34, 211, 238, 0.04));
     border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+/* SellerLegend Modules Styling */
+.sellergend-modules {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.modules-title {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.module-list {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.module-item {
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--primary);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.module-item:hover {
+    background: rgba(99, 102, 241, 0.08);
+    border-left-color: var(--secondary);
+    transform: translateX(5px);
+}
+
+.module-item strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.module-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.sellergend-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(34, 211, 238, 0.05));
+    border-radius: 15px;
+}
+
+.stat-highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-highlight .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-highlight .stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: center;
 }
 
 .showcase-item:hover {
@@ -463,6 +600,25 @@ body[data-theme="light"] .showcase-item.highlight {
     text-align: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.expertise-item .tech-icon {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.expertise-item .experience-badge {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-left: auto;
+    background: rgba(99, 102, 241, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 .expertise-item::after {
@@ -493,10 +649,155 @@ body[data-theme="light"] .showcase-item.highlight {
     transform: translateX(5px);
 }
 
-/* CTA Section */
-.cta-section {
+/* Solutions We Build Section */
+.solutions-section {
     padding: 100px 5%;
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.02), transparent);
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.solution-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.solution-category:hover {
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+    transform: translateY(-5px);
+}
+
+.solution-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.1);
+}
+
+.solution-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.3));
+}
+
+.solution-header h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.solution-modules {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.solution-item {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid var(--primary);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.solution-item:hover {
+    background: rgba(99, 102, 241, 0.08);
+    transform: translateX(8px);
+    border-left-width: 5px;
+}
+
+.solution-item strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.solution-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+}
+
+.tech-stack {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--primary);
+    background: rgba(99, 102, 241, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.solutions-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.stat-box {
     text-align: center;
+    padding: 1.5rem;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.stat-box:hover {
+    background: rgba(99, 102, 241, 0.1);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-text {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Light mode specific */
+body[data-theme="light"] .solution-category {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: rgba(99, 102, 241, 0.1);
+}
+
+body[data-theme="light"] .solution-category:hover {
+    background: white;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+body[data-theme="light"] .solution-item {
+    background: rgba(99, 102, 241, 0.03);
+}
+
+body[data-theme="light"] .solution-item:hover {
+    background: rgba(99, 102, 241, 0.1);
+}
+
+/* CTA Banner Section */
+.cta-banner {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(34, 211, 238, 0.02));
 }
 
 .cta-box {
@@ -505,8 +806,9 @@ body[data-theme="light"] .showcase-item.highlight {
     border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: 30px;
     padding: 4rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .cta-title {
@@ -519,6 +821,81 @@ body[data-theme="light"] .showcase-item.highlight {
     color: var(--text-secondary);
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.4);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--primary);
+}
+
+.cta-button.secondary:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.cta-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cta-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Contact Section */
+.cta-section {
+    padding: 100px 5%;
+    text-align: center;
 }
 
 /* Responsive */
@@ -549,6 +926,14 @@ body[data-theme="light"] .showcase-item.highlight {
     .expertise-category {
         min-height: auto;
     }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solutions-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 640px) {
@@ -562,5 +947,55 @@ body[data-theme="light"] .showcase-item.highlight {
 
     .client-grid {
         grid-template-columns: 1fr;
+    }
+
+    .cta-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-category {
+        padding: 1.5rem;
+    }
+
+    .solution-item {
+        padding: 1rem;
+    }
+
+    .solutions-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .service-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .sellergend-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sellergend-modules {
+        padding: 1.5rem;
+    }
+
+    .module-item {
+        padding: 0.8rem 1rem;
     }
 }
