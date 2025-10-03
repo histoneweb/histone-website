@@ -4,14 +4,18 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ContactSubmissionResource\Pages;
 use App\Filament\Resources\ContactSubmissionResource\RelationManagers;
+use App\Mail\ContactReply as ContactReplyMail;
+use App\Models\ContactReply;
 use App\Models\ContactSubmission;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Mail;
 
 class ContactSubmissionResource extends Resource
 {
@@ -82,6 +86,35 @@ class ContactSubmissionResource extends Resource
                             ->rows(4)
                             ->placeholder('Add internal notes about this inquiry...'),
                     ]),
+
+                Forms\Components\Section::make('Reply History')
+                    ->schema([
+                        Forms\Components\Repeater::make('replies')
+                            ->relationship('replies')
+                            ->schema([
+                                Forms\Components\TextInput::make('subject')
+                                    ->disabled()
+                                    ->columnSpanFull(),
+                                Forms\Components\Textarea::make('message')
+                                    ->disabled()
+                                    ->rows(3)
+                                    ->columnSpanFull(),
+                                Forms\Components\Placeholder::make('sent_info')
+                                    ->label('Sent')
+                                    ->content(fn (ContactReply $record) =>
+                                        $record->sent_at?->format('M d, Y H:i') . ' by ' . ($record->user?->name ?? 'System')
+                                    ),
+                            ])
+                            ->columns(2)
+                            ->addable(false)
+                            ->deletable(false)
+                            ->reorderable(false)
+                            ->defaultItems(0)
+                            ->collapsible()
+                            ->itemLabel(fn (array $state): ?string => $state['subject'] ?? null)
+                    ])
+                    ->collapsed()
+                    ->hidden(fn ($record) => !$record || $record->replies()->count() === 0),
 
                 Forms\Components\Section::make('Metadata')
                     ->schema([
@@ -163,6 +196,77 @@ class ContactSubmissionResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\Action::make('reply')
+                    ->label('Send Reply')
+                    ->icon('heroicon-o-paper-airplane')
+                    ->color('primary')
+                    ->form([
+                        Forms\Components\Section::make('Customer Inquiry')
+                            ->schema([
+                                Forms\Components\Placeholder::make('customer_info')
+                                    ->label('Customer Details')
+                                    ->content(fn (ContactSubmission $record) =>
+                                        "**Name:** {$record->name}  \n" .
+                                        "**Email:** {$record->email}  \n" .
+                                        ($record->company ? "**Company:** {$record->company}  \n" : '') .
+                                        ($record->service ? "**Service:** {$record->service}  \n" : '') .
+                                        "**Submitted:** {$record->created_at->format('M d, Y H:i')}"
+                                    ),
+                                Forms\Components\Placeholder::make('inquiry_message')
+                                    ->label('Original Message')
+                                    ->content(fn (ContactSubmission $record) => strip_tags($record->message)),
+                            ])
+                            ->collapsible()
+                            ->collapsed(false),
+
+                        Forms\Components\Section::make('Your Reply')
+                            ->schema([
+                                Forms\Components\TextInput::make('subject')
+                                    ->label('Subject')
+                                    ->default(fn (ContactSubmission $record) => "Re: Your inquiry about {$record->service}")
+                                    ->required()
+                                    ->maxLength(255),
+                                Forms\Components\Textarea::make('message')
+                                    ->label('Reply Message')
+                                    ->required()
+                                    ->rows(8)
+                                    ->placeholder('Write your reply here...')
+                                    ->helperText('This message will be sent to the customer\'s email address.'),
+                            ])
+                    ])
+                    ->action(function (ContactSubmission $record, array $data): void {
+                        try {
+                            // Send email
+                            Mail::to($record->email)->send(
+                                new ContactReplyMail($record, $data['message'], $data['subject'])
+                            );
+
+                            // Save reply to database
+                            ContactReply::create([
+                                'contact_submission_id' => $record->id,
+                                'subject' => $data['subject'],
+                                'message' => $data['message'],
+                                'user_id' => auth()->id(),
+                                'sent' => true,
+                                'sent_at' => now(),
+                            ]);
+
+                            // Mark as contacted
+                            $record->update(['status' => 'contacted']);
+
+                            Notification::make()
+                                ->title('Reply sent successfully')
+                                ->success()
+                                ->body("Your reply has been sent to {$record->email}")
+                                ->send();
+                        } catch (\Exception $e) {
+                            Notification::make()
+                                ->title('Failed to send reply')
+                                ->danger()
+                                ->body('Error: ' . $e->getMessage())
+                                ->send();
+                        }
+                    }),
                 Tables\Actions\Action::make('markAsRead')
                     ->label('Mark as Read')
                     ->icon('heroicon-o-envelope-open')

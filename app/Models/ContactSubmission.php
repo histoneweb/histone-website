@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ContactSubmission extends Model
 {
@@ -22,6 +23,11 @@ class ContactSubmission extends Model
     protected $casts = [
         'read_at' => 'datetime',
     ];
+
+    public function replies(): HasMany
+    {
+        return $this->hasMany(ContactReply::class);
+    }
 
     public function markAsRead(): void
     {
