@@ -83,10 +83,18 @@
 .form-select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236366f1' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-repeat: no-repeat;
     background-position: right 1rem center;
-    padding-right: 2.5rem;
+    padding-right: 3rem;
+}
+
+/* Select Options - ensure visibility */
+.form-select option {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 0.5rem;
 }
 
 /* Checkbox */
@@ -182,46 +190,113 @@
 
 /* Form Messages */
 .form-message {
-    padding: 1rem 1.25rem;
-    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-lg);
     margin-bottom: 1.5rem;
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    animation: slideInDown 0.3s ease-out;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: slideInDown 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.form-message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: currentColor;
 }
 
 @keyframes slideInDown {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-20px) scale(0.95);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
     }
 }
 
 .form-message-success {
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.3);
-    color: #059669;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(5, 150, 105, 0.2));
+    border: 2px solid rgba(16, 185, 129, 0.6);
+    color: #10b981;
+    position: relative;
+    z-index: 100;
 }
 
 .form-message-error {
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.3);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(220, 38, 38, 0.1));
+    border: 1px solid rgba(239, 68, 68, 0.4);
     color: #dc2626;
 }
 
 .message-icon {
-    font-size: 1.5rem;
-    font-weight: bold;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-icon-svg {
+    width: 2rem;
+    height: 2rem;
+    animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.form-message-success .message-icon-svg {
+    color: #10b981;
+}
+
+.form-message-error .message-icon-svg {
+    color: #ef4444;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.01em;
 }
 
 .message-text {
-    flex: 1;
-    line-height: 1.5;
+    margin: 0;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-size: 0.95rem;
 }
 
 /* Form Footer */
@@ -347,5 +422,26 @@ body[data-theme="dark"] .form-textarea {
 }
 
 body[data-theme="dark"] .form-select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2322d3ee' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322d3ee' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px;
+}
+
+body[data-theme="dark"] .form-select option {
+    background: #1a1f2e;
+    color: #e2e8f0;
+}
+
+/* Light theme select arrow */
+body[data-theme="light"] .form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 16px;
+}
+
+body[data-theme="light"] .form-select option {
+    background: #ffffff;
+    color: #1e293b;
 }

@@ -29,8 +29,11 @@ class ContactForm {
     async handleSubmit(e) {
         e.preventDefault();
 
+        console.log('Form submitted');
+
         // Validate all fields
         if (!this.validateForm()) {
+            console.log('Validation failed');
             return;
         }
 
@@ -41,18 +44,31 @@ class ContactForm {
         const formData = new FormData(this.form);
 
         try {
-            // Submit via AJAX
-            const response = await fetch('api/contact.php', {
+            // Submit via AJAX to Laravel endpoint
+            const response = await fetch('/contact', {
                 method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    'Accept': 'application/json'
+                },
                 body: formData
             });
 
+            console.log('Response status:', response.status);
             const result = await response.json();
+            console.log('Response data:', result);
 
-            if (result.success) {
-                this.showSuccess(result.message);
-                this.form.reset();
+            if (response.ok && result.success) {
+                console.log('Success! Showing message:', result.message);
+
+                // Clear errors first
                 this.clearAllErrors();
+
+                // Reset form
+                this.form.reset();
+
+                // Then show success message
+                this.showSuccess(result.message);
 
                 // Scroll to success message
                 this.scrollToMessage();
@@ -60,7 +76,8 @@ class ContactForm {
                 // Track conversion (if analytics available)
                 this.trackConversion();
             } else {
-                this.showError(result.message);
+                console.log('Error response:', result);
+                this.showError(result.message || 'An error occurred');
 
                 // Show field-specific errors
                 if (result.errors) {
@@ -187,29 +204,58 @@ class ContactForm {
     }
 
     showMessage(message, type) {
+        console.log('showMessage called:', type, message);
+        console.log('Form element:', this.form);
+
         // Remove existing message
         const existingMessage = this.form.querySelector('.form-message');
         if (existingMessage) {
+            console.log('Removing existing message');
             existingMessage.remove();
         }
 
         // Create message element
         const messageDiv = document.createElement('div');
         messageDiv.className = `form-message form-message-${type}`;
+
+        // Enhanced icons with SVG
+        const icon = type === 'success'
+            ? `<svg class="message-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+               </svg>`
+            : `<svg class="message-icon-svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+               </svg>`;
+
         messageDiv.innerHTML = `
-            <span class="message-icon">${type === 'success' ? '✓' : '⚠'}</span>
-            <span class="message-text">${message}</span>
+            <span class="message-icon">${icon}</span>
+            <div class="message-content">
+                <strong class="message-title">${type === 'success' ? 'Success!' : 'Error'}</strong>
+                <p class="message-text">${message}</p>
+            </div>
         `;
 
-        // Insert at top of form
-        this.form.insertBefore(messageDiv, this.form.firstChild);
+        console.log('Message div created:', messageDiv);
+        console.log('Form first child:', this.form.firstChild);
 
-        // Auto-remove after 5 seconds for success messages
+        // Insert at top of form (after any text nodes)
+        const firstElement = Array.from(this.form.childNodes).find(node => node.nodeType === 1);
+        if (firstElement) {
+            this.form.insertBefore(messageDiv, firstElement);
+        } else {
+            this.form.appendChild(messageDiv);
+        }
+
+        console.log('Message inserted. Checking if visible...');
+        console.log('Message in DOM:', document.querySelector('.form-message'));
+        console.log('Message computed style:', window.getComputedStyle(messageDiv));
+
+        // Auto-remove after 6 seconds for success messages
         if (type === 'success') {
             setTimeout(() => {
-                messageDiv.style.opacity = '0';
-                setTimeout(() => messageDiv.remove(), 300);
-            }, 5000);
+                messageDiv.style.animation = 'slideOutUp 0.4s ease-out';
+                setTimeout(() => messageDiv.remove(), 400);
+            }, 6000);
         }
     }
 

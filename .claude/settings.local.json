@@ -14,7 +14,17 @@
       "Bash(git log:*)",
       "Bash(git checkout:*)",
       "Bash(composer --version)",
-      "Bash(composer create-project:*)"
+      "Bash(composer create-project:*)",
+      "Bash(find:*)",
+      "Bash(dir:*)",
+      "Bash(ren:*)",
+      "Bash(move:*)",
+      "Bash(composer require:*)",
+      "Bash(del /Q \"C:\\laragon\\www\\histone-website\\app\\Http\\Controllers\\Admin\\AdminController.php\")",
+      "Bash(del /Q \"C:\\laragon\\www\\histone-website\\app\\Http\\Controllers\\Admin\\BlogPostController.php\")",
+      "WebSearch",
+      "Bash(findstr:*)",
+      "Bash(if not exist \"resources\\views\\emails\" mkdir \"resources\\views\\emails\")"
     ],
     "deny": [],
     "ask": []
