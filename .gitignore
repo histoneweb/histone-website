@@ -1,86 +1,24 @@
-# Environment Configuration
-.env
-.env.local
-.env.*.local
-
-# Operating System Files
+*.log
 .DS_Store
-Thumbs.db
-desktop.ini
-
-# IDE and Editor Files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.swp
-*.swo
-*~
-
-# Dependencies
-/vendor/
-/node_modules/
-composer.lock
-package-lock.json
-
-# Logs
-/storage/logs/*.log
-*.log
-error_log
-
-# Cache Files
-/storage/cache/*
-!/storage/cache/.gitkeep
-/cache/
-
-# Uploads and User Generated Content
-/storage/uploads/*
-!/storage/uploads/.gitkeep
-/public/uploads/*
-!/public/uploads/.gitkeep
-
-# Database Backups
-/backups/
-*.sql
-*.sqlite
-
-# Compiled Assets
-/public/assets/dist/
-*.min.css
-*.min.js
-
-# Temporary Files
-*.tmp
-*.temp
-/tmp/
-
-# System Files
-.htpasswd
-
-# Laravel/PHP Framework Specific (if we migrate later)
-/bootstrap/cache/*
-!/bootstrap/cache/.gitkeep
-
-# Composer
-composer.phar
-
-# NPM Debug Logs
-npm-debug.log
-yarn-error.log
-
-# Test Coverage
-/coverage/
+.env
+.env.backup
+.env.production
+.phpactor.json
 .phpunit.result.cache
-
-# Build Files
-/dist/
-/build/
-
-# WordPress
-/public/blog/wp-content/uploads/
-/public/blog/wp-content/cache/
-/public/blog/wp-content/upgrade/
-/public/blog/wp-content/backups/
-/public/blog/.htaccess
-/public/blog/wp-config.php
-*.log
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
