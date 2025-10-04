@@ -653,10 +653,11 @@ body[data-theme="light"] .showcase-item.highlight {
 }
 
 .expertise-item.premium {
-    background: var(--bg-card-hover);
-    border-color: var(--primary);
+    /* Same background as regular items for consistency */
+    background: var(--bg-card);
+    border-color: var(--border-color);
     color: var(--text-primary);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-sm);
 }
 
 .expertise-detailed .expertise-item:hover {
