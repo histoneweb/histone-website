@@ -769,14 +769,18 @@ body[data-theme="light"] .showcase-item.highlight {
 .stat-box {
     text-align: center;
     padding: 1.5rem;
-    background: rgba(100, 116, 139, 0.05);
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
     border-radius: 15px;
     transition: all 0.3s;
+    box-shadow: var(--shadow-md);
 }
 
 .stat-box:hover {
-    background: rgba(100, 116, 139, 0.1);
+    background: var(--bg-card-hover);
+    border-color: var(--primary);
     transform: translateY(-5px);
+    box-shadow: var(--shadow-xl), 0 0 0 2px var(--primary);
 }
 
 .stat-number {
