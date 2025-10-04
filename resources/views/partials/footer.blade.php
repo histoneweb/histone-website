@@ -119,25 +119,4 @@
 <script src="{{ asset('assets/js/faq.js') }}"></script>
 <script src="{{ asset('assets/js/contact-form.js') }}"></script>
 
-<!-- Update logo based on theme -->
-<script>
-    document.addEventListener('themeChanged', function(e) {
-        const logoImg = document.getElementById('logo-img');
-        if (e.detail.theme === 'light') {
-            logoImg.src = '{{ asset("assets/images/logos/logo-black.png") }}';
-        } else {
-            logoImg.src = '{{ asset("assets/images/logos/logo-white.png") }}';
-        }
-    });
-
-    // Set initial logo based on current theme
-    window.addEventListener('DOMContentLoaded', function() {
-        const logoImg = document.getElementById('logo-img');
-        const currentTheme = document.body.getAttribute('data-theme');
-        if (currentTheme === 'light') {
-            logoImg.src = '{{ asset("assets/images/logos/logo-black.png") }}';
-        } else {
-            logoImg.src = '{{ asset("assets/images/logos/logo-white.png") }}';
-        }
-    });
-</script>
+<!-- SVG logo doesn't need theme switching -->

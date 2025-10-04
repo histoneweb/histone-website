@@ -34,29 +34,31 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: 12px;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
     z-index: 1001;
     transition: all var(--transition-normal);
+    text-decoration: none;
 }
 
-.logo img {
-    height: 42px;
-    width: auto;
+.logo-icon {
+    width: 40px;
+    height: 40px;
     transition: all var(--transition-bounce);
-    filter: drop-shadow(0 2px 8px rgba(100, 116, 139, 0.2));
+    filter: drop-shadow(0 2px 8px rgba(59, 130, 246, 0.3));
 }
 
-.logo:hover img {
+.logo:hover .logo-icon {
     transform: translateY(-2px) scale(1.05);
-    filter: drop-shadow(0 4px 12px rgba(100, 116, 139, 0.4));
+    filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.5));
 }
 
 .logo-text {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
     background-clip: text;
     animation: glow 2s ease-in-out infinite;
 }
