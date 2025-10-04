@@ -114,7 +114,7 @@
 
 .cta-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(100, 116, 139, 0.3);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
 }
 
 .secondary-btn {
@@ -182,7 +182,7 @@
 /* Features Section */
 .features {
     padding: 100px 5%;
-    background: linear-gradient(180deg, transparent, rgba(100, 116, 139, 0.05));
+    background: linear-gradient(180deg, transparent, rgba(59, 130, 246, 0.05));
 }
 
 .features-grid {
@@ -200,7 +200,7 @@
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(100, 116, 139, 0.3);
+    box-shadow: var(--shadow-lg), 0 0 0 1px rgba(59, 130, 246, 0.3);
 }
 
 .feature-card::before {
@@ -210,7 +210,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.1), transparent);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), transparent);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -267,7 +267,7 @@
 .service-rate {
     font-size: 0.85rem;
     color: var(--text-secondary);
-    background: rgba(100, 116, 139, 0.1);
+    background: rgba(59, 130, 246, 0.1);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
 }
@@ -287,12 +287,12 @@
 
 .service-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(100, 116, 139, 0.3);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .feature-card.featured {
     border: 3px solid var(--primary);
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.08), rgba(245, 158, 11, 0.04));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(20, 184, 166, 0.04));
     box-shadow: var(--shadow-xl), 0 0 0 1px var(--primary);
 }
 
@@ -312,7 +312,7 @@
 /* Portfolio Section */
 .portfolio {
     padding: 100px 5%;
-    background: linear-gradient(180deg, rgba(100, 116, 139, 0.02), transparent);
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.02), transparent);
 }
 
 .portfolio-showcase {
@@ -375,7 +375,7 @@ body[data-theme="light"] .showcase-item.highlight {
 }
 
 .module-item:hover {
-    background: rgba(100, 116, 139, 0.08);
+    background: rgba(59, 130, 246, 0.08);
     border-left-color: var(--secondary);
     transform: translateX(5px);
 }
@@ -400,7 +400,7 @@ body[data-theme="light"] .showcase-item.highlight {
     gap: 1.5rem;
     margin: 2rem 0;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.1), rgba(245, 158, 11, 0.05));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(20, 184, 166, 0.05));
     border-radius: 15px;
 }
 
@@ -488,7 +488,7 @@ body[data-theme="light"] .showcase-item.highlight {
 .client-card:hover {
     background: var(--bg-card-hover);
     transform: translateY(-5px);
-    border-color: rgba(100, 116, 139, 0.3);
+    border-color: rgba(59, 130, 246, 0.3);
 }
 
 .client-header {
@@ -505,7 +505,7 @@ body[data-theme="light"] .showcase-item.highlight {
 
 .project-count {
     padding: 0.2rem 0.6rem;
-    background: rgba(245, 158, 11, 0.1);
+    background: rgba(20, 184, 166, 0.1);
     border-radius: 10px;
     font-size: 0.8rem;
     color: var(--secondary);
@@ -525,7 +525,7 @@ body[data-theme="light"] .showcase-item.highlight {
 }
 
 .project-highlights span {
-    color: rgba(100, 116, 139, 0.8);
+    color: rgba(59, 130, 246, 0.8);
     font-size: 0.85rem;
 }
 
@@ -535,7 +535,7 @@ body[data-theme="light"] .showcase-item.highlight {
     gap: 2rem;
     margin-top: 3rem;
     padding: 2rem;
-    background: rgba(100, 116, 139, 0.03);
+    background: rgba(59, 130, 246, 0.03);
     border-radius: 20px;
 }
 
@@ -585,7 +585,7 @@ body[data-theme="light"] .showcase-item.highlight {
 .expertise-category:hover {
     background: var(--bg-card-hover);
     transform: translateY(-5px);
-    border-color: rgba(100, 116, 139, 0.4);
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
 .category-title {
@@ -670,7 +670,7 @@ body[data-theme="light"] .showcase-item.highlight {
 /* Solutions We Build Section */
 .solutions-section {
     padding: 100px 5%;
-    background: linear-gradient(180deg, rgba(100, 116, 139, 0.02), transparent);
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.02), transparent);
 }
 
 .solutions-grid {
@@ -690,7 +690,7 @@ body[data-theme="light"] .showcase-item.highlight {
 
 .solution-category:hover {
     border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(100, 116, 139, 0.15);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
     transform: translateY(-5px);
 }
 
@@ -700,12 +700,12 @@ body[data-theme="light"] .showcase-item.highlight {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(100, 116, 139, 0.1);
+    border-bottom: 2px solid rgba(59, 130, 246, 0.1);
 }
 
 .solution-icon {
     font-size: 2.5rem;
-    filter: drop-shadow(0 0 10px rgba(100, 116, 139, 0.3));
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
 }
 
 .solution-header h3 {
@@ -729,7 +729,7 @@ body[data-theme="light"] .showcase-item.highlight {
 }
 
 .solution-item:hover {
-    background: rgba(100, 116, 139, 0.08);
+    background: rgba(59, 130, 246, 0.08);
     transform: translateX(8px);
     border-left-width: 5px;
 }
@@ -751,7 +751,7 @@ body[data-theme="light"] .showcase-item.highlight {
     display: inline-block;
     font-size: 0.85rem;
     color: var(--primary);
-    background: rgba(100, 116, 139, 0.1);
+    background: rgba(59, 130, 246, 0.1);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-weight: 500;
@@ -787,7 +787,7 @@ body[data-theme="light"] .showcase-item.highlight {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #f59e0b;
+    color: #14b8a6;
     margin-bottom: 0.5rem;
 }
 
@@ -800,32 +800,32 @@ body[data-theme="light"] .showcase-item.highlight {
 /* Light mode specific */
 body[data-theme="light"] .solution-category {
     background: rgba(255, 255, 255, 0.8);
-    border-color: rgba(100, 116, 139, 0.1);
+    border-color: rgba(59, 130, 246, 0.1);
 }
 
 body[data-theme="light"] .solution-category:hover {
     background: white;
-    box-shadow: 0 10px 30px rgba(100, 116, 139, 0.2);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 body[data-theme="light"] .solution-item {
-    background: rgba(100, 116, 139, 0.03);
+    background: rgba(59, 130, 246, 0.03);
 }
 
 body[data-theme="light"] .solution-item:hover {
-    background: rgba(100, 116, 139, 0.1);
+    background: rgba(59, 130, 246, 0.1);
 }
 
 /* CTA Banner Section */
 .cta-banner {
     padding: 100px 5%;
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.05), rgba(245, 158, 11, 0.02));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(20, 184, 166, 0.02));
 }
 
 .cta-box {
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.1), rgba(100, 116, 139, 0.05));
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.05));
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(100, 116, 139, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.2);
     border-radius: 30px;
     padding: 4rem;
     max-width: 900px;
@@ -871,7 +871,7 @@ body[data-theme="light"] .solution-item:hover {
 
 .cta-button.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(100, 116, 139, 0.4);
+    box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
 }
 
 .cta-button.secondary {
