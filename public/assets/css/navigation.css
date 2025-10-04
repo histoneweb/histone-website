@@ -1,24 +1,24 @@
-/* Navigation Styles */
+/* Modern Navigation - Complete Redesign */
 
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 1.5rem 0;
+    right: 0;
+    padding: var(--spacing-lg) 0;
     background: var(--nav-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
     z-index: 1000;
     transition: all var(--transition-normal);
     border-bottom: 1px solid transparent;
 }
 
 .header.scrolled {
-    padding: 1rem 0;
+    padding: var(--spacing-md) 0;
     background: var(--nav-bg-solid);
     border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .nav-container {
@@ -30,24 +30,27 @@
     align-items: center;
 }
 
-/* Logo */
+/* Logo - Modern Design */
 .logo {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
     z-index: 1001;
+    transition: all var(--transition-normal);
 }
 
 .logo img {
-    height: 40px;
+    height: 42px;
     width: auto;
-    transition: transform var(--transition-normal);
+    transition: all var(--transition-bounce);
+    filter: drop-shadow(0 2px 8px rgba(5, 150, 105, 0.2));
 }
 
 .logo:hover img {
-    transform: scale(1.05);
+    transform: translateY(-2px) scale(1.05);
+    filter: drop-shadow(0 4px 12px rgba(5, 150, 105, 0.4));
 }
 
 .logo-text {
@@ -63,88 +66,118 @@
     50% { filter: brightness(1.2); }
 }
 
-/* Navigation Links */
+/* Navigation Links - Modern Style */
 .nav-menu {
     display: flex;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     align-items: center;
     list-style: none;
 }
 
 .nav-menu li {
     position: relative;
-    z-index: 10;
 }
 
 .nav-link {
-    color: var(--text-primary);
+    color: var(--text-secondary);
     position: relative;
-    padding: var(--spacing-xs) var(--spacing-sm);
-    font-size: var(--font-size-base);
-    font-weight: 500;
-    transition: color var(--transition-normal);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-normal);
     display: inline-block;
+    border-radius: var(--radius-md);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-from);
+    border-radius: var(--radius-md);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    z-index: -1;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: var(--spacing-sm);
-    right: var(--spacing-sm);
-    width: auto;
+    bottom: 6px;
+    left: 50%;
+    width: 0;
     height: 2px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    transform: scaleX(0);
-    transition: transform var(--transition-normal);
-    transform-origin: left;
-    pointer-events: none;
-    z-index: -1;
+    background: var(--primary);
+    transform: translateX(-50%);
+    transition: width var(--transition-normal);
+    border-radius: var(--radius-full);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    opacity: 1;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
-    transform: scaleX(1);
+    width: 24px;
 }
 
-.nav-link:hover {
-    color: var(--primary);
-}
-
-/* CTA Button */
+/* CTA Button - Modern Gradient */
 .nav-cta {
-    padding: 0.8rem 2rem;
+    padding: var(--spacing-sm) var(--spacing-xl);
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: white;
     border-radius: var(--radius-full);
-    font-size: var(--font-size-base);
-    font-weight: 600;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
     position: relative;
     overflow: hidden;
-    transition: all var(--transition-normal);
-    margin-left: var(--spacing-md);
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+    transition: all var(--transition-bounce);
+    margin-left: var(--spacing-lg);
+    box-shadow: var(--shadow-primary);
+    border: 1px solid var(--primary-light);
 }
 
 .nav-cta::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: left var(--transition-slow);
-    pointer-events: none;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.nav-cta::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.4), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    border-radius: 50%;
 }
 
 .nav-cta:hover::before {
-    left: 100%;
+    opacity: 1;
+}
+
+.nav-cta:hover::after {
+    width: 300px;
+    height: 300px;
 }
 
 .nav-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(5, 150, 105, 0.5);
 }
 
 /* Mobile Menu Toggle */
