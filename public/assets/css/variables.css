@@ -84,21 +84,21 @@
 
 /* Dark Theme (Default) - Modern Approach */
 body[data-theme="dark"] {
-    --bg-primary: #030712;
-    --bg-secondary: #111827;
-    --bg-tertiary: #1f2937;
-    --bg-card: #1f2937;
-    --bg-card-hover: #374151;
-    --border-color: #374151;
-    --border-subtle: #1f2937;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
-    --text-tertiary: #6b7280;
-    --nav-bg: rgba(17, 24, 39, 0.9);
-    --nav-bg-solid: rgba(17, 24, 39, 0.98);
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+    --bg-card: #1e293b;
+    --bg-card-hover: #334155;
+    --border-color: #475569;
+    --border-subtle: #334155;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #94a3b8;
+    --nav-bg: rgba(30, 41, 59, 0.9);
+    --nav-bg-solid: rgba(30, 41, 59, 0.98);
     --backdrop-blur: blur(20px);
-    --gradient-from: rgba(100, 116, 139, 0.06);
-    --gradient-to: rgba(245, 158, 11, 0.03);
+    --gradient-from: rgba(100, 116, 139, 0.12);
+    --gradient-to: rgba(245, 158, 11, 0.06);
 }
 
 /* Light Theme - Clean & Bright */
