@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 10px 30px rgba(100, 116, 139, 0.2);
     z-index: 1001;
     transition: all var(--transition-normal);
     border: none;
@@ -21,7 +21,7 @@
 
 .theme-switcher:hover {
     transform: scale(1.1);
-    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 15px 40px rgba(100, 116, 139, 0.3);
 }
 
 .theme-switcher:active {
@@ -53,7 +53,7 @@ body[data-theme="light"] .theme-icon.sun {
     top: 0;
     left: 0;
     z-index: -1;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #6366f1 75%, #667eea 100%);
+    background: linear-gradient(135deg, #64748b 0%, #475569 25%, #94a3b8 50%, #64748b 75%, #475569 100%);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     opacity: var(--gradient-opacity);

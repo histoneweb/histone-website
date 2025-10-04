@@ -11,7 +11,7 @@
 
 /* Blog Hero Section */
 .blog-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #64748b 0%, #475569 100%);
     padding: 6rem 0 4rem;
     margin-top: 80px; /* Account for fixed header */
     text-align: center;
@@ -60,13 +60,13 @@
 }
 
 .category-pill:hover {
-    background: #667eea;
+    background: #64748b;
     color: white;
     transform: translateY(-2px);
 }
 
 .category-pill.active {
-    background: #667eea;
+    background: #64748b;
     color: white;
 }
 
@@ -76,7 +76,7 @@ body[data-theme="dark"] .category-pill {
 }
 
 body[data-theme="dark"] .category-pill:hover {
-    background: #667eea;
+    background: #64748b;
     color: white;
 }
 
@@ -135,7 +135,7 @@ body[data-theme="dark"] .category-pill:hover {
 }
 
 .blog-category {
-    background: #667eea;
+    background: #64748b;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
@@ -163,7 +163,7 @@ body[data-theme="dark"] .category-pill:hover {
 }
 
 .blog-card-title a:hover {
-    color: #667eea;
+    color: #64748b;
 }
 
 .blog-card-excerpt {
@@ -198,7 +198,7 @@ body[data-theme="dark"] .category-pill:hover {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background: #667eea;
+    background: #64748b;
     color: white;
     display: flex;
     align-items: center;
@@ -213,7 +213,7 @@ body[data-theme="dark"] .category-pill:hover {
 }
 
 .read-more {
-    color: #667eea;
+    color: #64748b;
     font-weight: 600;
     text-decoration: none;
     display: flex;
