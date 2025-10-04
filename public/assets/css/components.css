@@ -245,10 +245,7 @@
 .stat-number {
     font-size: var(--font-size-3xl);
     font-weight: bold;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f59e0b;
     display: block;
     margin-bottom: var(--spacing-xs);
 }

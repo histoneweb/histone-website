@@ -37,12 +37,13 @@
 .hero-badge {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: rgba(100, 116, 139, 0.1);
-    border: 1px solid rgba(100, 116, 139, 0.3);
+    background: var(--primary);
+    border: 2px solid var(--primary-light);
     border-radius: 50px;
     margin-bottom: 2rem;
     font-size: 0.9rem;
-    color: var(--primary);
+    color: white;
+    font-weight: 600;
     animation: pulse 2s infinite;
 }
 
@@ -55,16 +56,15 @@
     font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--text-primary), var(--primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-primary);
+    font-weight: 800;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     margin-bottom: 2rem;
+    font-weight: 600;
 }
 
 .hero-description {
@@ -72,6 +72,7 @@
     color: var(--text-secondary);
     margin-bottom: 3rem;
     line-height: 1.8;
+    font-weight: 400;
 }
 
 .hero-buttons {
@@ -165,13 +166,17 @@
     text-align: center;
     padding: 1.5rem;
     background: var(--bg-card);
+    border: 2px solid var(--border-color);
     border-radius: 15px;
     transition: all 0.3s;
+    box-shadow: var(--shadow-lg);
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
     background: var(--bg-card-hover);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-xl), 0 0 0 2px var(--primary);
 }
 
 /* Features Section */
@@ -775,7 +780,7 @@ body[data-theme="light"] .showcase-item.highlight {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: #f59e0b;
     margin-bottom: 0.5rem;
 }
 
