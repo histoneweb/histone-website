@@ -210,7 +210,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="cta-btn">Start Your Project</a>
-                        <a href="#portfolio" class="secondary-btn">View Portfolio</a>
+                        <a href="#portfolio" class="cta-btn">View Portfolio</a>
                     </div>
                 </div>
                 <div class="hero-visual">
