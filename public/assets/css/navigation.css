@@ -45,12 +45,12 @@
     height: 42px;
     width: auto;
     transition: all var(--transition-bounce);
-    filter: drop-shadow(0 2px 8px rgba(139, 92, 246, 0.2));
+    filter: drop-shadow(0 2px 8px rgba(217, 119, 6, 0.2));
 }
 
 .logo:hover img {
     transform: translateY(-2px) scale(1.05);
-    filter: drop-shadow(0 4px 12px rgba(139, 92, 246, 0.4));
+    filter: drop-shadow(0 4px 12px rgba(217, 119, 6, 0.4));
 }
 
 .logo-text {
@@ -177,7 +177,7 @@
 
 .nav-cta:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.5);
+    box-shadow: 0 12px 30px rgba(217, 119, 6, 0.5);
 }
 
 /* Mobile Menu Toggle */
