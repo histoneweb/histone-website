@@ -270,8 +270,7 @@
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card featured">
-                        <div class="feature-badge">Most Popular</div>
+                    <div class="feature-card">
                         <div class="feature-icon">🤖</div>
                         <h3 class="feature-title">AI Integration Services</h3>
                         <p class="feature-description">
