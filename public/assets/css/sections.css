@@ -189,12 +189,13 @@
 .feature-card {
     background: var(--bg-card);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 20px;
     padding: 2rem;
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
 .feature-card::before {
@@ -316,22 +317,25 @@
 .showcase-item {
     background: var(--bg-card);
     backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
     border-radius: 20px;
     padding: 2.5rem;
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
+    box-shadow: var(--shadow-lg);
 }
 
 .showcase-item.highlight {
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.05), rgba(245, 158, 11, 0.02));
-    border: 1px solid rgba(100, 116, 139, 0.2);
+    background: var(--bg-card);
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-xl), 0 0 0 1px var(--primary);
 }
 
 body[data-theme="light"] .showcase-item.highlight {
-    background: linear-gradient(135deg, rgba(100, 116, 139, 0.08), rgba(245, 158, 11, 0.04));
-    border: 1px solid rgba(100, 116, 139, 0.3);
+    background: var(--bg-card);
+    border: 2px solid var(--primary);
+    box-shadow: var(--shadow-xl), 0 0 0 1px var(--primary);
 }
 
 /* SellerLegend Modules Styling */
@@ -417,7 +421,8 @@ body[data-theme="light"] .showcase-item.highlight {
 
 .showcase-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(100, 116, 139, 0.1);
+    box-shadow: var(--shadow-2xl), 0 0 0 2px var(--primary);
+    border-color: var(--primary);
 }
 
 .showcase-badge {
