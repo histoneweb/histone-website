@@ -342,7 +342,7 @@ Need help implementing AI customer service for your business? I've helped dozens
 
 **Muhammad Awais Naseem** is a full-stack developer with 14+ years of experience in AI integration, SaaS development, and Amazon SP-API systems. As co-founder of SellerLegend and creator of Forecastly (acquired by Jungle Scout), he's built AI-powered platforms serving thousands of users worldwide.
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammadawaisnaseem/) | [GitHub](https://github.com/histoneweb) | [Contact](/contact)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammadawaisnaseem/) | [GitHub](https://github.com/histonedev) | [Contact](/contact)
 
 ---
 

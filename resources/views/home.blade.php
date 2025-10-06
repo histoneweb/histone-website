@@ -68,7 +68,7 @@
                 "areaServed": ["US", "UK", "EU", "Australia", "Pakistan"],
                 "sameAs": [
                     "https://www.linkedin.com/in/muhammadawaisnaseem/",
-                    "https://github.com/histoneweb"
+                    "https://github.com/histonedev"
                 ],
                 "serviceArea": {
                     "@@type": "GeoCircle",

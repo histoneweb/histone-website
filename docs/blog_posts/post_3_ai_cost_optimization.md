@@ -705,7 +705,7 @@ I've helped companies reduce their OpenAI bills by $50,000+ annually while impro
 
 **Muhammad Awais Naseem** has 14+ years of experience building AI-powered SaaS platforms. He's optimized AI systems for companies processing millions of queries monthly, achieving consistent 60-70% cost reductions without quality loss.
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammadawaisnaseem/) | [GitHub](https://github.com/histoneweb)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammadawaisnaseem/) | [GitHub](https://github.com/histonedev)
 
 ---
 
