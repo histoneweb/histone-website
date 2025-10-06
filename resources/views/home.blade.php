@@ -1356,18 +1356,6 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label for="budget_range" class="form-label">Budget Range</label>
-                                <select id="budget_range" name="budget_range" class="form-select">
-                                    <option value="not_sure">Select Budget Range</option>
-                                    <option value="under_5k">Under $5,000</option>
-                                    <option value="5k_10k">$5,000 - $10,000</option>
-                                    <option value="10k_25k">$10,000 - $25,000</option>
-                                    <option value="25k_50k">$25,000 - $50,000</option>
-                                    <option value="50k_plus">$50,000+</option>
-                                    <option value="not_sure">Not Sure Yet</option>
-                                </select>
-                            </div>
                         </div>
 
                         <div class="form-row full">
