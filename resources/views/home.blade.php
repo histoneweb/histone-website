@@ -67,7 +67,7 @@
                 "numberOfEmployees": "1-10",
                 "areaServed": ["US", "UK", "EU", "Australia", "Pakistan"],
                 "sameAs": [
-                    "https://www.linkedin.com/in/muhammadawaisnaseem/",
+                    "https://www.linkedin.com/company/histone-solutions",
                     "https://github.com/histonedev"
                 ],
                 "serviceArea": {
@@ -1417,7 +1417,7 @@
                                 <div class="alternative-icon">💼</div>
                                 <div class="alternative-label">LinkedIn</div>
                                 <div class="alternative-value">
-                                    <a href="https://www.linkedin.com/in/muhammadawaisnaseem/" target="_blank" rel="noopener">Connect with us</a>
+                                    <a href="https://www.linkedin.com/company/histone-solutions" target="_blank" rel="noopener">Connect with us</a>
                                 </div>
                             </div>
                         </div>

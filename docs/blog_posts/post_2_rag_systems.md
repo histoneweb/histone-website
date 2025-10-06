@@ -661,7 +661,7 @@ I've successfully deployed RAG systems for SaaS platforms, e-commerce companies,
 
 **Muhammad Awais Naseem** specializes in AI/ML integration, having built RAG systems for platforms serving 5,000+ users. With 14+ years in full-stack development and expertise in LangChain, OpenAI, and vector databases, he's helped companies transition from traditional search to AI-powered knowledge retrieval.
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/muhammadawaisnaseem/) | [GitHub](https://github.com/histonedev)
+**Connect:** [LinkedIn](https://www.linkedin.com/company/histone-solutions) | [GitHub](https://github.com/histonedev)
 
 ---
 
