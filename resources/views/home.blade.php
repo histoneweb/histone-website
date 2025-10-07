@@ -830,7 +830,7 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "Awais is an exceptional developer with deep expertise in Amazon SP-API integration. He built our entire seller analytics platform from scratch, handling millions of transactions monthly with zero downtime. His technical skills and problem-solving abilities are outstanding."
+                                        "The Histone team demonstrated exceptional expertise in Amazon SP-API integration. They built our entire seller analytics platform from scratch, handling millions of transactions monthly with zero downtime. Their technical skills and problem-solving abilities are outstanding."
                                     </p>
                                 </div>
                                 <div class="testimonial-author">
@@ -861,7 +861,7 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "Working with Awais on our ERP system was a game-changer. He understood our complex requirements and delivered a robust solution that integrated seamlessly with Amazon MWS. His attention to detail and commitment to quality is impressive."
+                                        "Working with Histone Solutions on our ERP system was a game-changer. They understood our complex requirements and delivered a robust solution that integrated seamlessly with Amazon MWS. Their attention to detail and commitment to quality is impressive."
                                     </p>
                                 </div>
                                 <div class="testimonial-author">
@@ -892,7 +892,7 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "Awais delivered our marketplace platform ahead of schedule with exceptional quality. His expertise in Python/Flask and ability to architect scalable solutions made him the perfect choice for our project. Highly recommended!"
+                                        "Histone Solutions delivered our marketplace platform ahead of schedule with exceptional quality. Their expertise in Python/Flask and ability to architect scalable solutions made them the perfect choice for our project. Highly recommended!"
                                     </p>
                                 </div>
                                 <div class="testimonial-author">
@@ -923,7 +923,7 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "The AWS infrastructure setup Awais created for us handles massive traffic with ease. His knowledge of cloud architecture, auto-scaling, and optimization techniques saved us thousands in operational costs. A true professional."
+                                        "The AWS infrastructure setup Histone Solutions created for us handles massive traffic with ease. Their knowledge of cloud architecture, auto-scaling, and optimization techniques saved us thousands in operational costs. True professionals."
                                     </p>
                                 </div>
                                 <div class="testimonial-author">
@@ -954,7 +954,7 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "Outstanding work on our sales intelligence dashboard. Awais transformed complex data into actionable insights with beautiful visualizations. His API development skills and business understanding set him apart from other developers."
+                                        "Outstanding work on our sales intelligence dashboard. Histone Solutions transformed complex data into actionable insights with beautiful visualizations. Their API development skills and business understanding set them apart from other development teams."
                                     </p>
                                 </div>
                                 <div class="testimonial-author">
@@ -1263,7 +1263,7 @@
                     </p>
                     <div class="cta-buttons">
                         <a href="#contact" class="cta-button primary">Start a Project</a>
-                        <a href="https://www.linkedin.com/in/awaisnaseem/" target="_blank" rel="noopener" class="cta-button secondary">View LinkedIn Profile</a>
+                        <a href="https://www.linkedin.com/company/histone-solutions" target="_blank" rel="noopener" class="cta-button secondary">View LinkedIn Profile</a>
                     </div>
                     <div class="cta-stats">
                         <div class="cta-stat">

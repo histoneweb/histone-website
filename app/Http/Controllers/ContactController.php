@@ -68,7 +68,7 @@ class ContactController extends Controller
 
         // Send notification to company
         try {
-            $companyEmail = config('mail.from.address', 'awaisnaseem1@gmail.com');
+            $companyEmail = config('mail.from.address', 'info@histone.com.pk');
             Mail::to($companyEmail)->send(new ContactSubmissionNotification($submission));
         } catch (\Exception $e) {
             \Log::error('Failed to send contact notification: ' . $e->getMessage());
