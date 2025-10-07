@@ -859,37 +859,6 @@
                                         <span class="star">★</span>
                                     </div>
                                     <p class="testimonial-text">
-                                        "The Histone team demonstrated exceptional expertise in Amazon SP-API integration. They built our entire seller analytics platform from scratch, handling millions of transactions monthly with zero downtime. Their technical skills and problem-solving abilities are outstanding."
-                                    </p>
-                                </div>
-                                <div class="testimonial-author">
-                                    <div class="author-avatar">JM</div>
-                                    <div class="author-info">
-                                        <div class="author-name">John Matthews</div>
-                                        <div class="author-title">CEO</div>
-                                        <div class="author-company">SellerLegend</div>
-                                        <div class="verified-badge">
-                                            <span class="verified-icon">✓</span>
-                                            <span>Verified Client</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-slide">
-                            <div class="testimonial-card">
-                                <div class="quote-icon">"</div>
-                                <div class="testimonial-content">
-                                    <div class="star-rating">
-                                        <span class="star">★</span>
-                                        <span class="star">★</span>
-                                        <span class="star">★</span>
-                                        <span class="star">★</span>
-                                        <span class="star">★</span>
-                                    </div>
-                                    <p class="testimonial-text">
                                         "Working with Histone Solutions on our ERP system was a game-changer. They understood our complex requirements and delivered a robust solution that integrated seamlessly with Amazon MWS. Their attention to detail and commitment to quality is impressive."
                                     </p>
                                 </div>
