@@ -101,21 +101,21 @@ body[data-theme="dark"] {
     --gradient-to: rgba(20, 184, 166, 0.1);
 }
 
-/* Light Theme - Clean & Bright Blue */
+/* Light Theme - Clean & Professional */
 body[data-theme="light"] {
-    --bg-primary: #f8fafc;
-    --bg-secondary: #eff6ff;
-    --bg-tertiary: #dbeafe;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-tertiary: #f1f5f9;
     --bg-card: #ffffff;
-    --bg-card-hover: #eff6ff;
-    --border-color: #bfdbfe;
-    --border-subtle: #dbeafe;
+    --bg-card-hover: #f8fafc;
+    --border-color: #e2e8f0;
+    --border-subtle: #f1f5f9;
     --text-primary: #0f172a;
     --text-secondary: #475569;
     --text-tertiary: #64748b;
     --nav-bg: rgba(255, 255, 255, 0.95);
     --nav-bg-solid: rgba(255, 255, 255, 0.98);
     --backdrop-blur: blur(20px);
-    --gradient-from: rgba(59, 130, 246, 0.1);
-    --gradient-to: rgba(20, 184, 166, 0.05);
+    --gradient-from: rgba(59, 130, 246, 0.08);
+    --gradient-to: rgba(20, 184, 166, 0.04);
 }

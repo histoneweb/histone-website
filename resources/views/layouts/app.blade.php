@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/testimonials.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/contact-form.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/legal.css') }}">
 
     @stack('styles')
 </head>

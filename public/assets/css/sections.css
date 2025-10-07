@@ -73,6 +73,7 @@
     margin-bottom: 3rem;
     line-height: 1.8;
     font-weight: 400;
+    text-align: justify;
 }
 
 .hero-buttons {
@@ -251,6 +252,7 @@
     position: relative;
     z-index: 1;
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .service-meta {

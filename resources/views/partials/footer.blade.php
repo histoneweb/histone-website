@@ -4,7 +4,7 @@
             <!-- Brand Section -->
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="{{ asset('assets/images/logos/footer-logo.png') }}" alt="Histone Solutions" loading="lazy">
+                    <img src="{{ asset('assets/images/logos/footer-logo.png') }}" alt="Histone Solutions" class="logo-img" loading="lazy">
                 </div>
                 <p class="footer-description">
                     Histone Solutions Private Limited delivers enterprise-grade full-stack development and Amazon ecosystem solutions. With 14+ years of proven expertise, we transform complex challenges into scalable, innovative software.
@@ -22,7 +22,7 @@
                     <a href="mailto:info@histone.com.pk" class="social-link" aria-label="Email">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     </a>
-                    <a href="tel:+925183594 91" class="social-link" aria-label="Phone">
+                    <a href="tel:+923335508040" class="social-link" aria-label="Phone">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
                     </a>
                 </div>
@@ -44,56 +44,69 @@
             <div class="footer-section">
                 <h4>Services</h4>
                 <ul class="footer-links">
-                    <li><a href="#" class="footer-link">Amazon SP-API Integration</a></li>
-                    <li><a href="#" class="footer-link">SaaS Development</a></li>
-                    <li><a href="#" class="footer-link">Full Stack Development</a></li>
-                    <li><a href="#" class="footer-link">API Development</a></li>
-                    <li><a href="#" class="footer-link">Cloud Architecture</a></li>
+                    <li><a href="/#amazon-spapi" class="footer-link">Amazon SP-API Integration</a></li>
+                    <li><a href="/#saas-development" class="footer-link">SaaS Development</a></li>
+                    <li><a href="/#fullstack-development" class="footer-link">Full Stack Development</a></li>
+                    <li><a href="/#api-development" class="footer-link">API Development</a></li>
+                    <li><a href="/#cloud-devops" class="footer-link">Cloud Architecture</a></li>
+                    <li><a href="/#ai-integration" class="footer-link">AI Integration</a></li>
                 </ul>
             </div>
 
-            <!-- Contact Info -->
+            <!-- Latest Articles -->
             <div class="footer-section">
-                <h4>Contact Us</h4>
-                <div class="footer-contact">
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <div class="contact-info">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value"><a href="mailto:info@histone.com.pk">info@histone.com.pk</a></span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <div class="contact-info">
-                            <span class="contact-label">Phone</span>
-                            <span class="contact-value"><a href="tel:+925183594 91">+92 51 8359491</a></span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div class="contact-info">
-                            <span class="contact-label">Address</span>
-                            <span class="contact-value">First Floor, House 5A, Commercial Block-A<br>Satellite Town, Rawalpindi, Punjab 46000</span>
-                        </div>
-                    </div>
-                </div>
+                <h4>Latest Articles</h4>
+                <ul class="footer-links">
+                    @forelse($latestPosts ?? [] as $post)
+                        <li>
+                            <a href="{{ route('blog.show', $post->slug) }}" class="footer-link footer-blog-link">
+                                {{ Str::limit($post->title, 50) }}
+                            </a>
+                        </li>
+                    @empty
+                        <li><a href="/blog" class="footer-link">Visit Our Blog</a></li>
+                    @endforelse
+                </ul>
+            </div>
+        </div>
 
-                <!-- Business Hours -->
-                <div class="business-hours mt-3">
-                    <div class="business-hours-item">
-                        <span class="hours-day">Mon - Fri</span>
-                        <span class="hours-time">09:00 - 18:00</span>
-                    </div>
-                    <div class="business-hours-item">
-                        <span class="hours-day">Sat - Sun</span>
-                        <span class="hours-time">15:00 - 00:00</span>
-                    </div>
-                    <div class="business-hours-item">
-                        <span class="hours-day">Support</span>
-                        <span class="hours-time">24/7 Available</span>
-                    </div>
-                </div>
+        <!-- Contact Info Row -->
+        <div class="footer-contact-grid">
+            <!-- Email -->
+            <div class="footer-section">
+                <h4>Email</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="mailto:info@histone.com.pk" class="footer-link">
+                            <span class="contact-icon-inline">📧</span> info@histone.com.pk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Phone -->
+            <div class="footer-section">
+                <h4>Phone</h4>
+                <ul class="footer-links">
+                    <li>
+                        <a href="tel:+923335508040" class="footer-link">
+                            <span class="contact-icon-inline">📞</span> +92 333 5508040
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Address -->
+            <div class="footer-section">
+                <h4>Address</h4>
+                <ul class="footer-links">
+                    <li>
+                        <span class="footer-link">
+                            <span class="contact-icon-inline">📍</span> Office 305, Talha Heights<br>
+                            <span style="margin-left: 1.5rem;">6th Road, Rawalpindi</span>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -119,4 +132,24 @@
 <script src="{{ asset('assets/js/faq.js') }}"></script>
 <script src="{{ asset('assets/js/contact-form.js') }}"></script>
 
-<!-- SVG logo doesn't need theme switching -->
+<!-- Logo theme switching -->
+<script>
+    function updateLogo() {
+        const theme = document.body.getAttribute('data-theme');
+        const logoImgs = document.querySelectorAll('.logo-img');
+
+        logoImgs.forEach(img => {
+            if (theme === 'light') {
+                img.src = '{{ asset("assets/images/logos/logo-black.png") }}';
+            } else {
+                img.src = '{{ asset("assets/images/logos/footer-logo.png") }}';
+            }
+        });
+    }
+
+    // Update on theme change
+    document.addEventListener('themeChanged', updateLogo);
+
+    // Set initial logo based on current theme
+    window.addEventListener('DOMContentLoaded', updateLogo);
+</script>

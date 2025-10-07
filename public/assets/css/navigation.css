@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-sm) 0;
     background: var(--nav-bg);
     backdrop-filter: var(--backdrop-blur);
     -webkit-backdrop-filter: var(--backdrop-blur);
@@ -15,7 +15,7 @@
 }
 
 .header.scrolled {
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-xs) 0;
     background: var(--nav-bg-solid);
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-md);
@@ -34,33 +34,21 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-bold);
     z-index: 1001;
     transition: all var(--transition-normal);
     text-decoration: none;
 }
 
-.logo-icon {
-    width: 40px;
-    height: 40px;
+.logo-img {
+    height: 50px;
+    width: auto;
     transition: all var(--transition-bounce);
     filter: drop-shadow(0 2px 8px rgba(59, 130, 246, 0.3));
 }
 
-.logo:hover .logo-icon {
-    transform: translateY(-2px) scale(1.05);
+.logo:hover .logo-img {
+    transform: translateY(-2px) scale(1.03);
     filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.5));
-}
-
-.logo-text {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    background-clip: text;
-    animation: glow 2s ease-in-out infinite;
 }
 
 @keyframes glow {

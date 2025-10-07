@@ -2,19 +2,7 @@
 <header class="header">
     <div class="nav-container">
         <a href="/" class="logo">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-icon">
-                <rect width="40" height="40" rx="8" fill="url(#gradient1)"/>
-                <path d="M12 10H16V30H12V10Z" fill="white"/>
-                <path d="M24 10H28V30H24V10Z" fill="white"/>
-                <path d="M12 18H28V22H12V18Z" fill="white"/>
-                <defs>
-                    <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#3b82f6"/>
-                        <stop offset="1" stop-color="#14b8a6"/>
-                    </linearGradient>
-                </defs>
-            </svg>
-            <span class="logo-text">Histone Solutions Private Limited</span>
+            <img src="{{ asset('assets/images/logos/footer-logo.png') }}" alt="Histone Solutions" class="logo-img">
         </a>
 
         <nav role="navigation">

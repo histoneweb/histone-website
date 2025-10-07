@@ -49,7 +49,7 @@
                 "description": "Enterprise-grade full-stack development company specializing in Amazon SP-API integration, AI/ML solutions, and SaaS product development with 14+ years of expertise serving businesses worldwide.",
                 "address": {
                     "@@type": "PostalAddress",
-                    "streetAddress": "First Floor, House 5A, Commercial Block-A, Satellite Town",
+                    "streetAddress": "Office 305 third floor Talha Heights 6th Road",
                     "addressLocality": "Rawalpindi",
                     "addressRegion": "Punjab",
                     "postalCode": "46000",
@@ -57,7 +57,7 @@
                 },
                 "contactPoint": {
                     "@@type": "ContactPoint",
-                    "telephone": "+92-51-8359491",
+                    "telephone": "+92-333-5508040",
                     "email": "info@histone.com.pk",
                     "contactType": "customer service",
                     "areaServed": ["US", "UK", "EU", "Australia", "Pakistan"],
@@ -246,75 +246,69 @@
                     <p class="section-subtitle">Comprehensive solutions for modern businesses</p>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-card">
+                    <div class="feature-card" id="fullstack-development">
                         <div class="feature-icon">💻</div>
                         <h3 class="feature-title">Full Stack Development</h3>
                         <p class="feature-description">
-                            End-to-end application development using PHP, Python, Node.js, and modern frameworks. From architecture design to deployment, ensuring scalable and maintainable solutions.
+                            End-to-end web application development using modern technology stacks. We build scalable, high-performance applications with PHP (Laravel, CodeIgniter), Python (Flask, Django), Node.js, and React/Vue.js. From database architecture and RESTful API design to responsive frontend development and cloud deployment, we deliver production-ready solutions. Our expertise includes microservices architecture, real-time systems with WebSockets, and performance optimization for high-traffic applications. Whether you're launching an MVP or scaling an enterprise platform, we ensure clean code, comprehensive testing, and maintainable systems that grow with your business.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 2-8 weeks</span>
-                            <span class="service-rate">💰 $15-30/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" id="amazon-spapi">
                         <div class="feature-icon">🛍️</div>
                         <h3 class="feature-title">Amazon Ecosystem Expert</h3>
                         <p class="feature-description">
-                            8+ years specializing in SP-API, MWS migration, seller tools, and marketplace integration. Built tools managing millions in transactions and inventory.
+                            Specialized Amazon SP-API integration services with 8+ years of marketplace expertise. We build custom seller tools, analytics platforms, and automation systems for Amazon vendors and sellers. Our solutions include order management, inventory synchronization, FBA automation, sponsored products integration, multi-marketplace support, and real-time profit analytics. We've developed platforms managing millions in transactions and thousands of SKUs. From simple API integrations to comprehensive seller central dashboards with advanced repricing algorithms and forecasting models, we deliver battle-tested solutions that scale with your Amazon business and maximize operational efficiency.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 1-4 weeks</span>
-                            <span class="service-rate">💰 $20-30/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" id="ai-integration">
                         <div class="feature-icon">🤖</div>
                         <h3 class="feature-title">AI Integration Services</h3>
                         <p class="feature-description">
-                            GPT-4, Claude API, LangChain, RAG systems, chatbot development. Transform your business with cutting-edge AI solutions that reduce costs by 70%+.
+                            Enterprise AI/ML integration using OpenAI GPT-4, Claude API, and LangChain framework. We build production-ready AI solutions including intelligent chatbots, RAG (Retrieval-Augmented Generation) systems with vector databases (Pinecone, Weaviate), AI-powered customer support automation, and semantic search engines. Our expertise includes prompt engineering, context optimization, cost reduction strategies (70%+ savings achieved), and hybrid AI architectures. We've deployed systems processing 500K+ queries monthly with sub-second response times. From AI-enhanced workflows to complete intelligent automation platforms, we deliver practical, ROI-focused solutions that transform customer experiences and operational efficiency.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 2-6 weeks</span>
-                            <span class="service-rate">💰 $25-35/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" id="saas-development">
                         <div class="feature-icon">☁️</div>
                         <h3 class="feature-title">SaaS Product Development</h3>
                         <p class="feature-description">
-                            Co-founded SellerLegend, developed Forecastly (acquired). Expert in multi-tenant architecture, subscription models, and scaling from MVP to enterprise.
+                            End-to-end SaaS platform development from concept to scale. We architect and build multi-tenant applications with subscription billing (Stripe, PayPal), user management, role-based access control, and analytics dashboards. Our portfolio includes co-founding SellerLegend (5,000+ users, $50M+ GMV tracked) and developing Forecastly (acquired by Jungle Scout). Expertise in database partitioning, microservices architecture, background job processing, API rate limiting, and automated scaling. We handle everything from MVP validation to enterprise-grade platforms serving thousands of users with 99.9% uptime, comprehensive monitoring, and seamless payment processing.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 4-12 weeks</span>
-                            <span class="service-rate">💰 $20-30/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" id="api-development">
                         <div class="feature-icon">⚡</div>
                         <h3 class="feature-title">API Integration & Development</h3>
                         <p class="feature-description">
-                            RESTful API design, OAuth 2.0 implementation, webhook systems, and third-party integrations. Processed 10M+ monthly API calls with optimal performance.
+                            Custom RESTful API development and third-party service integration. We design and build secure, scalable APIs with comprehensive documentation, versioning, and rate limiting. Expertise in OAuth 2.0, JWT authentication, webhook systems, GraphQL, and API gateway patterns. Our integrations include payment processors (Stripe, PayPal), shipping providers (FedEx, UPS), CRM systems (Salesforce), marketing platforms, and custom business tools. We've architected systems processing 10M+ monthly API calls with 99.9% uptime, intelligent caching, and real-time monitoring. From simple REST endpoints to complex microservices communication, we ensure reliable, performant integrations.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 1-3 weeks</span>
-                            <span class="service-rate">💰 $18-28/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" id="cloud-devops">
                         <div class="feature-icon">🏗️</div>
                         <h3 class="feature-title">Cloud Architecture & DevOps</h3>
                         <p class="feature-description">
-                            AWS expertise with EC2, RDS Aurora, S3, ElastiCache, VPC, and CloudWatch. Infrastructure as Code, CI/CD pipelines, and DevOps best practices.
+                            AWS cloud infrastructure design and DevOps implementation for scalable, resilient applications. Expertise in EC2, RDS Aurora, S3, ElastiCache, Lambda, VPC configuration, CloudWatch monitoring, and auto-scaling groups. We implement Infrastructure as Code using Terraform, containerization with Docker, CI/CD pipelines with GitHub Actions and Jenkins, and comprehensive logging solutions. Our services include cloud migration strategy, cost optimization (reducing bills by 40%+), security hardening, disaster recovery planning, and 24/7 monitoring setup. From startup infrastructure to enterprise-grade deployments handling millions of requests, we architect for performance, security, and reliability.
                         </p>
                         <div class="service-meta">
                             <span class="service-timeline">⏱️ 1-4 weeks</span>
-                            <span class="service-rate">💰 $22-32/hr</span>
                         </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
@@ -1119,36 +1113,20 @@
 
                     <div class="faq-item">
                         <button class="faq-question">
-                            <span>How much does an Amazon SP-API integration project cost?</span>
+                            <span>How long does an Amazon SP-API integration project take?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Amazon SP-API projects vary based on complexity and scope. Here's a typical breakdown:</p>
+                            <p>Amazon SP-API projects vary based on complexity and scope. Here's a typical timeline:</p>
                             <ul>
-                                <li><strong>Basic Integration (1-2 weeks):</strong> $2,000 - $4,000 - Simple order sync, inventory updates, basic reporting</li>
-                                <li><strong>Standard Integration (2-4 weeks):</strong> $4,000 - $8,000 - Multi-marketplace support, FBA integration, sponsored products API, repricing</li>
-                                <li><strong>Advanced Solution (4-8 weeks):</strong> $8,000 - $15,000+ - Complete seller tool with analytics, forecasting, automated workflows, custom algorithms</li>
+                                <li><strong>Basic Integration (1-2 weeks):</strong> Simple order sync, inventory updates, basic reporting</li>
+                                <li><strong>Standard Integration (2-4 weeks):</strong> Multi-marketplace support, FBA integration, sponsored products API, repricing</li>
+                                <li><strong>Advanced Solution (4-8 weeks):</strong> Complete seller tool with analytics, forecasting, automated workflows, custom algorithms</li>
                             </ul>
-                            <p>Our hourly rate ranges from $20-30/hour depending on project complexity. We provide detailed estimates after understanding your specific requirements and can work on both fixed-price and hourly basis.</p>
+                            <p>We provide detailed timelines and technical specifications after understanding your specific requirements during the discovery phase.</p>
                         </div>
                     </div>
 
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Can you help migrate from Amazon MWS to SP-API?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Yes! We've successfully migrated 10+ applications from MWS to SP-API. The migration process typically involves:</p>
-                            <ol>
-                                <li><strong>Audit (Week 1):</strong> Review existing MWS implementation, identify all API calls, data dependencies, and business logic</li>
-                                <li><strong>Planning (Week 1-2):</strong> Map MWS endpoints to SP-API equivalents, plan OAuth 2.0 implementation, design new architecture</li>
-                                <li><strong>Implementation (Week 2-4):</strong> Build new SP-API integration, implement LWA (Login with Amazon), migrate data flows</li>
-                                <li><strong>Testing & Deployment (Week 4-5):</strong> Parallel testing, validation, staged rollout to minimize disruption</li>
-                            </ol>
-                            <p>We ensure zero downtime during migration and maintain backward compatibility where needed. Average timeline: 4-6 weeks depending on application complexity.</p>
-                        </div>
-                    </div>
 
                     <div class="faq-item">
                         <button class="faq-question">
@@ -1409,7 +1387,7 @@
                                 <div class="alternative-icon">📞</div>
                                 <div class="alternative-label">Phone</div>
                                 <div class="alternative-value">
-                                    <a href="tel:+925183594 91">+92 51 8359491</a>
+                                    <a href="tel:+923335508040">+92 333 5508040</a>
                                 </div>
                             </div>
 
