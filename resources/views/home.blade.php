@@ -252,9 +252,6 @@
                         <p class="feature-description">
                             We've been writing Laravel since version 4.0—back when everyone was still on CodeIgniter. SellerLegend runs on our Laravel architecture, serving 5,000+ active sellers with 99.9% uptime. We don't just build apps; we build systems that handle millions of API calls, scale under Black Friday traffic, and actually make money. Our stack? PHP (Laravel, CodeIgniter), Python (Flask, Django), Node.js, React/Vue.js—whatever gets the job done. We've shipped 52 projects, debugged at 3am, optimized databases choking on millions of rows, and built real-time dashboards that traders actually trust. Zero "it works on my machine" excuses. Just production-ready code that runs and runs and runs.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 2-8 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card" id="amazon-spapi">
@@ -263,9 +260,6 @@
                         <p class="feature-description">
                             We've integrated with Amazon APIs since the MWS days (RIP). SellerLegend processes 10M+ Amazon API calls monthly. We've dealt with Amazon's throttling, their cryptic error messages, and their "undocumented features" that break at 3am on Saturday. When Amazon changes their API without warning, we've already adapted. We're not just SP-API certified—we've built actual profitable SaaS businesses on their platform. Built seller tools managing millions in revenue, FBA automation that actually works, repricing algorithms that don't tank your margins, and profit analytics that traders bet their businesses on. We speak fluent Amazon: ASIN, SKU, FBA, FBM, and all the acronyms that matter.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 1-4 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card" id="ai-integration">
@@ -274,9 +268,6 @@
                         <p class="feature-description">
                             Remember when everyone was freaking out about ChatGPT's API costs? We cut one client's bill from $12K to $3K monthly—same performance, 70% less spend. We've been building with GPT-4, Claude, and LangChain since the APIs launched. Built RAG systems that actually retrieve the right context, chatbots that don't hallucinate product prices, and customer support automation that saves $18K/month in human costs. We've processed 500K+ AI queries monthly with sub-second responses. We know which model to use when, how to cache intelligently, and how to make AI profitable—not just impressive. Prompt engineering? We've written thousands. Vector databases? Pinecone and Weaviate are in our stack. We build AI systems that make money, not just burn API credits.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 2-6 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card" id="saas-development">
@@ -285,9 +276,6 @@
                         <p class="feature-description">
                             We co-founded SellerLegend—grew it from zero to 5,000+ users tracking $50M+ in GMV. Built Forecastly from scratch (acquired by Jungle Scout). We don't just build SaaS; we've lived the entire journey: MVP launch, first paying customer, scaling infrastructure at 3am, optimizing databases under load, implementing subscription billing that actually works, and handling the flood of support tickets when you go viral. We've debugged Stripe webhooks at 2am, dealt with multi-tenancy database nightmares, built role-based access control that makes sense, and scaled systems from 10 to 10,000 users. We know what matters: getting to market fast, iterating based on real usage, and building infrastructure that grows with revenue—not ahead of it.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 4-12 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card" id="api-development">
@@ -296,9 +284,6 @@
                         <p class="feature-description">
                             We've integrated with every API from hell and back: Amazon's throttle-happy endpoints, Stripe's webhook retry storms, shipping APIs that return XML in 2025, and that one legacy SOAP service your business depends on. We've architected systems handling 10M+ monthly API calls with 99.9% uptime. Built OAuth flows that actually work, JWT authentication that doesn't leak tokens, rate limiters that don't break under load, and webhook systems that survive network failures. We write API documentation developers don't hate, implement versioning that doesn't break client apps, and build integrations that your team can actually maintain. Whether it's REST, GraphQL, or whatever format your vendor chose, we make systems talk to each other—reliably.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 1-3 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                     <div class="feature-card" id="cloud-devops">
@@ -307,9 +292,6 @@
                         <p class="feature-description">
                             We've been woken up by AWS bills, PagerDuty alerts, and servers catching fire (virtually). We've migrated monoliths to microservices at 3am with zero downtime, set up auto-scaling that actually scales, and optimized cloud costs by 40%+ (yes, AWS charges for everything). We run SellerLegend's infrastructure—it has to handle Black Friday traffic surges, process millions of API calls, and stay up when sellers are making money. We've configured VPCs that don't leak, set up RDS Aurora for high availability, implemented Redis caching that doesn't evict the wrong keys, and built CI/CD pipelines that deploy without breaking production. We use Terraform, Docker, CloudWatch, and whatever tools keep things running. We architect infrastructure you can sleep through—because someone has to be able to.
                         </p>
-                        <div class="service-meta">
-                            <span class="service-timeline">⏱️ 1-4 weeks</span>
-                        </div>
                         <a href="#contact" class="service-cta">Get Started →</a>
                     </div>
                 </div>
