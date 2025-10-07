@@ -116,8 +116,9 @@
                 © 2025 Histone Solutions Private Limited. All rights reserved.
             </p>
             <ul class="footer-legal">
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+                <li><a href="{{ route('terms-of-service') }}">Terms of Service</a></li>
+                <li><a href="{{ route('cookie-policy') }}">Cookie Policy</a></li>
                 <li><a href="/sitemap.xml">Sitemap</a></li>
             </ul>
         </div>
@@ -131,6 +132,7 @@
 <script src="{{ asset('assets/js/testimonials.js') }}"></script>
 <script src="{{ asset('assets/js/faq.js') }}"></script>
 <script src="{{ asset('assets/js/contact-form.js') }}"></script>
+<script src="{{ asset('assets/js/cookie-consent.js') }}"></script>
 
 <!-- Logo theme switching -->
 <script>

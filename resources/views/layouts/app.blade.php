@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/faq.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/contact-form.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/legal.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/cookie-consent.css') }}">
 
     @stack('styles')
 </head>
@@ -30,6 +31,8 @@
     @yield('content')
 
     @include('partials.footer')
+
+    @include('partials.cookie-consent')
 
     @stack('scripts')
 </body>
