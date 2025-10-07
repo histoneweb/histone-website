@@ -1,9 +1,22 @@
 /* Legal Pages Styles */
 
+/* Ensure navigation is always clickable */
+.header,
+.nav-menu,
+.nav-link,
+.nav-cta,
+.theme-switcher,
+.mobile-menu-toggle {
+    pointer-events: auto !important;
+    z-index: 1000;
+}
+
 .legal-page {
     min-height: 100vh;
     padding: calc(var(--spacing-3xl) + 60px) 0 var(--spacing-3xl);
     background: var(--bg-primary);
+    position: relative;
+    z-index: 1;
 }
 
 .legal-container {
