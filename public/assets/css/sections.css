@@ -1023,3 +1023,118 @@ body[data-theme="light"] .solution-item:hover {
         padding: 0.8rem 1rem;
     }
 }
+
+/* Founder Story Section */
+.founder-story {
+    padding: var(--spacing-4xl) 0;
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.founder-story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.story-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.story-label {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.story-title {
+    font-size: var(--font-size-4xl);
+    color: var(--text-primary);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.story-body {
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.story-text {
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-xl);
+    text-align: justify;
+}
+
+.story-text:last-of-type {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.story-text strong {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.story-cta {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--border-subtle);
+}
+
+.story-motto {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    font-style: italic;
+    margin: 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .founder-story {
+        padding: var(--spacing-3xl) 0;
+    }
+
+    .story-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .story-body {
+        padding: var(--spacing-xl);
+    }
+
+    .story-text {
+        font-size: var(--font-size-md);
+    }
+
+    .story-motto {
+        font-size: var(--font-size-xl);
+    }
+}
