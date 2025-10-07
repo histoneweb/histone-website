@@ -207,15 +207,16 @@
     padding-top: var(--spacing-lg);
     border-top: 1px solid var(--border-color);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     gap: var(--spacing-md);
+    text-align: center;
 }
 
 .footer-copyright {
     color: var(--text-secondary);
     font-size: var(--font-size-sm);
+    margin: 0;
 }
 
 .footer-legal {
