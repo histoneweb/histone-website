@@ -100,15 +100,12 @@ class SyncBlogContent extends Command
                     ['slug' => $postData['slug']],
                     [
                         'title' => $postData['title'],
-                        'sub_title' => $postData['sub_title'],
-                        'body' => $postData['body'],
+                        'excerpt' => $postData['excerpt'] ?? '',
+                        'content' => $postData['content'] ?? '',
                         'blog_author_id' => $postData['blog_author_id'],
                         'blog_category_id' => $newCategoryId,
                         'published_at' => $postData['published_at'],
-                        'featured_image' => $postData['featured_image'],
-                        'featured_image_caption' => $postData['featured_image_caption'],
-                        'seo_title' => $postData['seo_title'],
-                        'seo_description' => $postData['seo_description'],
+                        'banner' => $postData['banner'] ?? null,
                     ]
                 );
 
