@@ -7,6 +7,7 @@ use Stephenjude\FilamentBlog\Models\Post;
 use Stephenjude\FilamentBlog\Models\Category;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
+use Stephenjude\FilamentBlog\Models\Author;
 
 class SyncBlogContent extends Command
 {
@@ -46,6 +47,7 @@ class SyncBlogContent extends Command
 
         $this->info('📦 Blog content file found!');
         $this->line('📅 Exported at: ' . $data['exported_at']);
+        $this->line('👤 Authors: ' . count($data['authors'] ?? []));
         $this->line('📊 Categories: ' . count($data['categories']));
         $this->line('📝 Posts: ' . count($data['posts']));
         $this->newLine();
@@ -87,6 +89,15 @@ class SyncBlogContent extends Command
 
             $this->line("✅ Categories: {$categoriesCreated} created, {$categoriesUpdated} updated");
 
+            // Get or create default author for posts
+            $defaultAuthor = Author::first();
+            if (!$defaultAuthor) {
+                $this->error('❌ No blog authors found. Please create at least one author first.');
+                DB::rollBack();
+                return Command::FAILURE;
+            }
+            $this->line("ℹ️  Using default author: {$defaultAuthor->name} (ID: {$defaultAuthor->id})");
+
             // Sync Posts
             $this->info('Syncing posts...');
             $postsCreated = 0;
@@ -96,13 +107,17 @@ class SyncBlogContent extends Command
                 // Map old category ID to new category ID
                 $newCategoryId = $categoryMap[$postData['blog_category_id']] ?? null;
 
+                // Check if author exists on server, otherwise use default
+                $authorExists = Author::find($postData['blog_author_id']);
+                $authorId = $authorExists ? $postData['blog_author_id'] : $defaultAuthor->id;
+
                 $post = Post::updateOrCreate(
                     ['slug' => $postData['slug']],
                     [
                         'title' => $postData['title'],
                         'excerpt' => $postData['excerpt'] ?? '',
                         'content' => $postData['content'] ?? '',
-                        'blog_author_id' => $postData['blog_author_id'],
+                        'blog_author_id' => $authorId,
                         'blog_category_id' => $newCategoryId,
                         'published_at' => $postData['published_at'],
                         'banner' => $postData['banner'] ?? null,

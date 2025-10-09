@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Stephenjude\FilamentBlog\Models\Post;
 use Stephenjude\FilamentBlog\Models\Category;
+use Stephenjude\FilamentBlog\Models\Author;
 use Illuminate\Support\Facades\File;
 
 class ExportBlogContent extends Command
@@ -29,6 +30,19 @@ class ExportBlogContent extends Command
     public function handle()
     {
         $this->info('Exporting blog content...');
+
+        // Export authors
+        $authors = Author::all()->map(function ($author) {
+            return [
+                'id' => $author->id,
+                'name' => $author->name,
+                'email' => $author->email,
+                'photo' => $author->photo,
+                'bio' => $author->bio,
+                'github_handle' => $author->github_handle,
+                'twitter_handle' => $author->twitter_handle,
+            ];
+        });
 
         // Export categories
         $categories = Category::all()->map(function ($category) {
@@ -62,6 +76,7 @@ class ExportBlogContent extends Command
 
         $exportData = [
             'exported_at' => now()->toDateTimeString(),
+            'authors' => $authors,
             'categories' => $categories,
             'posts' => $posts,
         ];
@@ -78,6 +93,7 @@ class ExportBlogContent extends Command
 
         $this->info('✅ Blog content exported successfully!');
         $this->line('📁 File: ' . $filePath);
+        $this->line('👤 Authors: ' . $authors->count());
         $this->line('📊 Categories: ' . $categories->count());
         $this->line('📝 Posts: ' . $posts->count());
         $this->newLine();
