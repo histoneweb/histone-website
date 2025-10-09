@@ -1,5 +1,25 @@
 {
-    "exported_at": "2025-10-09 12:25:47",
+    "exported_at": "2025-10-09 12:36:02",
+    "authors": [
+        {
+            "id": 1,
+            "name": "Muhammad Awais Naseem",
+            "email": "admin@histone.com.pk",
+            "photo": null,
+            "bio": "Senior Full Stack Developer specializing in enterprise solutions, Amazon SP-API integrations, and scalable web applications.",
+            "github_handle": "histone-solutions",
+            "twitter_handle": "histone_dev"
+        },
+        {
+            "id": 3,
+            "name": "Histone Solutions",
+            "email": "info@histone.com.pk",
+            "photo": null,
+            "bio": "Histone Solutions is a leading software development company specializing in Full Stack Development, Amazon SP-API Integration, and AI-powered solutions. With 14+ years of experience, we deliver enterprise-grade, production-ready software for businesses worldwide.",
+            "github_handle": "histoneweb",
+            "twitter_handle": null
+        }
+    ],
     "categories": [
         {
             "id": 1,
