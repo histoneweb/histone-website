@@ -89,14 +89,18 @@ class SyncBlogContent extends Command
 
             $this->line("✅ Categories: {$categoriesCreated} created, {$categoriesUpdated} updated");
 
-            // Get or create default author for posts
-            $defaultAuthor = Author::first();
-            if (!$defaultAuthor) {
-                $this->error('❌ No blog authors found. Please create at least one author first.');
+            // Get Histone Solutions author (all posts use company author)
+            $histoneAuthor = Author::where('email', 'info@histone.com.pk')->first();
+            if (!$histoneAuthor) {
+                $histoneAuthor = Author::first();
+            }
+
+            if (!$histoneAuthor) {
+                $this->error('❌ No blog authors found. Please run: php artisan db:seed --class=BlogAuthorSeeder');
                 DB::rollBack();
                 return Command::FAILURE;
             }
-            $this->line("ℹ️  Using default author: {$defaultAuthor->name} (ID: {$defaultAuthor->id})");
+            $this->line("ℹ️  All posts will use author: {$histoneAuthor->name} (ID: {$histoneAuthor->id})");
 
             // Sync Posts
             $this->info('Syncing posts...');
@@ -107,17 +111,13 @@ class SyncBlogContent extends Command
                 // Map old category ID to new category ID
                 $newCategoryId = $categoryMap[$postData['blog_category_id']] ?? null;
 
-                // Check if author exists on server, otherwise use default
-                $authorExists = Author::find($postData['blog_author_id']);
-                $authorId = $authorExists ? $postData['blog_author_id'] : $defaultAuthor->id;
-
                 $post = Post::updateOrCreate(
                     ['slug' => $postData['slug']],
                     [
                         'title' => $postData['title'],
                         'excerpt' => $postData['excerpt'] ?? '',
                         'content' => $postData['content'] ?? '',
-                        'blog_author_id' => $authorId,
+                        'blog_author_id' => $histoneAuthor->id,
                         'blog_category_id' => $newCategoryId,
                         'published_at' => $postData['published_at'],
                         'banner' => $postData['banner'] ?? null,
