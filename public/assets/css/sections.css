@@ -923,7 +923,43 @@ body[data-theme="light"] .solution-item:hover {
 }
 
 /* Responsive */
+@media (max-width: 1600px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.35rem;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.15rem;
+    }
+
     .expertise-categories {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -936,7 +972,15 @@ body[data-theme="light"] .solution-item:hover {
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
     }
 
     .hero-buttons {
