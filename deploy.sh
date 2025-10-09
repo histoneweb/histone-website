@@ -123,17 +123,25 @@ fi
 echo ""
 
 ###############################################################################
-# Step 7: Generate sitemap
+# Step 7: Seed blog author
 ###############################################################################
-echo "Step 7: Generating sitemap..."
+echo "Step 7: Creating/updating blog author..."
+php artisan db:seed --class=BlogAuthorSeeder --force
+print_success "Blog author seeded"
+echo ""
+
+###############################################################################
+# Step 8: Generate sitemap
+###############################################################################
+echo "Step 8: Generating sitemap..."
 php artisan sitemap:generate
 print_success "Sitemap generated"
 echo ""
 
 ###############################################################################
-# Step 8: Fix file permissions
+# Step 9: Fix file permissions
 ###############################################################################
-echo "Step 8: Setting proper file permissions..."
+echo "Step 9: Setting proper file permissions..."
 
 # Set ownership (adjust user/group as needed)
 # Uncomment and modify if you need to change ownership
@@ -147,9 +155,9 @@ print_success "File permissions set"
 echo ""
 
 ###############################################################################
-# Step 9: Restart services (if needed)
+# Step 10: Restart services (if needed)
 ###############################################################################
-echo "Step 9: Restarting services..."
+echo "Step 10: Restarting services..."
 
 # Restart PHP-FPM (adjust service name as needed)
 if command -v systemctl &> /dev/null; then
@@ -171,9 +179,9 @@ fi
 echo ""
 
 ###############################################################################
-# Step 10: Disable maintenance mode
+# Step 11: Disable maintenance mode
 ###############################################################################
-echo "Step 10: Disabling maintenance mode..."
+echo "Step 11: Disabling maintenance mode..."
 php artisan up
 print_success "Application is now live!"
 echo ""

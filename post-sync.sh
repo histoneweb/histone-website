@@ -91,9 +91,17 @@ fi
 echo ""
 
 ###############################################################################
-# Step 5: Sync blog content (if exported file exists)
+# Step 5: Seed blog author (ensures author exists before syncing)
 ###############################################################################
-echo "Step 5: Syncing blog content..."
+echo "Step 5: Creating/updating blog author..."
+php artisan db:seed --class=BlogAuthorSeeder --force > /dev/null 2>&1 || true
+print_success "Blog author seeded"
+echo ""
+
+###############################################################################
+# Step 6: Sync blog content (if exported file exists)
+###############################################################################
+echo "Step 6: Syncing blog content..."
 if [ -f "storage/app/blog-sync/blog-content.json" ]; then
     php artisan blog:sync --force
     print_success "Blog content synced"
@@ -103,17 +111,17 @@ fi
 echo ""
 
 ###############################################################################
-# Step 6: Regenerate sitemap
+# Step 7: Regenerate sitemap
 ###############################################################################
-echo "Step 6: Regenerating sitemap..."
+echo "Step 7: Regenerating sitemap..."
 php artisan sitemap:generate > /dev/null 2>&1 || true
 print_success "Sitemap regenerated"
 echo ""
 
 ###############################################################################
-# Step 7: Restart queue workers (if running)
+# Step 8: Restart queue workers (if running)
 ###############################################################################
-echo "Step 7: Checking queue workers..."
+echo "Step 8: Checking queue workers..."
 if pgrep -f "artisan queue:work" > /dev/null; then
     php artisan queue:restart
     print_success "Queue workers restarted"
@@ -123,18 +131,18 @@ fi
 echo ""
 
 ###############################################################################
-# Step 8: Fix storage permissions (if needed)
+# Step 9: Fix storage permissions (if needed)
 ###############################################################################
-echo "Step 8: Verifying storage permissions..."
+echo "Step 9: Verifying storage permissions..."
 find storage bootstrap/cache -type d -exec chmod 775 {} \; 2>/dev/null || true
 find storage bootstrap/cache -type f -exec chmod 664 {} \; 2>/dev/null || true
 print_success "Permissions verified"
 echo ""
 
 ###############################################################################
-# Step 9: Clear OPcache (if available)
+# Step 10: Clear OPcache (if available)
 ###############################################################################
-echo "Step 9: Clearing OPcache..."
+echo "Step 10: Clearing OPcache..."
 if command -v php &> /dev/null; then
     # Try to clear OPcache via Artisan command or restart PHP-FPM
     php artisan optimize:clear > /dev/null 2>&1 || true
