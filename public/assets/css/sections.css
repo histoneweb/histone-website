@@ -2,11 +2,11 @@
 
 /* Hero Section Enhancements */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 5%;
+    padding: 2rem 5%;
     position: relative;
     margin-top: 80px;
 }
@@ -40,7 +40,7 @@
     background: var(--primary);
     border: 2px solid var(--primary-light);
     border-radius: 50px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     font-size: 0.9rem;
     color: white;
     font-weight: 600;
@@ -55,7 +55,7 @@
 .hero h1 {
     font-size: 4rem;
     line-height: 1.1;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
     font-weight: 800;
 }
@@ -63,15 +63,15 @@
 .hero-subtitle {
     font-size: 1.5rem;
     color: var(--text-primary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     font-weight: 600;
 }
 
 .hero-description {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
-    line-height: 1.8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
     font-weight: 400;
     text-align: justify;
 }
