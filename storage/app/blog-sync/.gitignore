@@ -1,0 +1,3 @@
+# Track JSON files in this directory
+!*.json
+!.gitkeep

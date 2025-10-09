@@ -1,0 +1,2 @@
+# This directory stores exported blog content for syncing
+# Run: php artisan blog:export to create blog-content.json
