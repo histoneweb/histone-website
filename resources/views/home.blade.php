@@ -202,11 +202,11 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">🚀 We Built SellerLegend & Forecastly</div>
-                    <h1>From Zero to 5,000 Users. We Can Scale Your SaaS Too.</h1>
+                    <div class="hero-badge">🚀 14+ Years Building Enterprise Solutions</div>
+                    <h1>Enterprise-Grade Development. Production-Ready Results.</h1>
                     <p class="hero-subtitle">Full Stack Development | Amazon SP-API Experts | AI Integration</p>
                     <p class="hero-description">
-                        We don't just build apps—we co-founded SellerLegend (5,000+ users, $50M+ GMV), built Forecastly (acquired by Jungle Scout), and shipped 52 production systems. We've processed 10M+ Amazon API calls monthly, cut AI costs by 70%, and kept infrastructure running through Black Friday surges. 14+ years of turning complex problems into profitable software.
+                        Histone Solutions delivers scalable, high-performance software for businesses worldwide. We've architected systems processing 10M+ API calls monthly, optimized AI costs by 70%, and built infrastructure that handles Black Friday traffic without breaking. 52 shipped projects, 45K+ verified hours, and a 100% success rate across Amazon integrations, SaaS platforms, and AI automation.
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="cta-btn">Start Your Project</a>
